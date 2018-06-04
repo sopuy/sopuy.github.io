@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>  markdown常用语法
+ | sopuy's blog</title>
+
+    <meta name="author" content="sopuy"/>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"/>
+    <link rel="stylesheet" href="http://127.0.0.1:8000/theme/css/jquery.mglass.css"/>
+    <link rel="stylesheet" href="http://127.0.0.1:8000/theme/css/pygment-solarized-dark.css"/>
+    <link rel="stylesheet" href="http://127.0.0.1:8000/theme/css/style.css"/>
+
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'/>
+    <link href='https://fonts.googleapis.com/css?family=Istok+Web' rel='stylesheet' type='text/css'/>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Sans+Mono' rel='stylesheet' type='text/css'/>
+
+
+    <link rel="icon" href="http://127.0.0.1:8000/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="http://127.0.0.1:8000/favicon.ico" type="image/x-icon">
+
+    <!-- Feeds -->
+
+
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <div class="page-header">
+        <h1><a href="http://127.0.0.1:8000">sopuy's blog</a> <small></small></h1>
+      </div>
+
+      <nav class="navbar navbar-default">
+
+        <!-- Hamburger menu for mobile -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#plumage-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="http://127.0.0.1:8000" title="">sopuy's blog</a>
+        </div>
+
+        <!-- Menus and search forms -->
+        <div class="collapse navbar-collapse" id="plumage-navbar-collapse-1">
+
+          <ul class="nav navbar-nav">
+            
+
+<li  class="active" >
+                  <a href="http://127.0.0.1:8000/category/notes.html">Notes <span class="sr-only">(current)</span></a>
+                </li>
+<li >
+                  <a href="http://127.0.0.1:8000/category/python.html">Python</a>
+                </li>
+
+<li >
+                <a href="http://127.0.0.1:8000/pages/about.html">About</a>
+              </li>
+          </ul>
+
+
+            <form class="navbar-form navbar-right" role="search" action="http://127.0.0.1:8000/search.html" onsubmit="return validateForm(this.elements['q'].value);">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" name="q" id="tipue_search_input" class="form-control search-query" placeholder="Search" required />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit"><i class="fa
+                        fa-search fa-fw"></i></button>
+                  </span>
+                </div>
+              </div>
+            </form>
+
+        </div>
+
+      </nav>
+
+    </div>
+
+
+    <div class="container main">
+
+
+      <div class="row">
+        <div class=" col-md-9  ">
+  <h1>
+    <a href="http://127.0.0.1:8000/posts/2017/markdownchang-yong-yu-fa.html" rel="bookmark" title="Permalink to markdown常用语法">markdown常用语法</a>
+  </h1>
+        </div>
+      </div>
+
+      <div class="row">
+
+
+        <div class=" col-md-9 " id="content" role="main">
+  
+
+  <div>
+    <h3>markdown常用语法</h3>
+<p>[TOC]
+1. 标题
+2. 强调
+3. 换行
+4. 列表
+5. 引用
+6. 链接与图片
+7. 代码块
+8. 水平线
+9. 待办事项</p>
+<!--more-->
+
+<h4>标题</h4>
+<p>以符号<code>#</code>标记，一个代表一级标题，共有六级标题</p>
+<div class="highlight"><pre><span></span># 这是 H1
+## 这是 H2
+###### 这是 H6
+</pre></div>
+
+
+<hr>
+<h4>强调</h4>
+<p>斜体：文字两端使用1对<code>*</code>或<code>-</code>标记起来
+粗体：文字两端使用2对<code>*</code>或<code>-</code>标记起来
+删除线：使用2对<code>~</code>包裹起来的行，标记为删除线  </p>
+<p><em>我是斜体</em>
+<strong>我是粗体</strong>
+~~ 我是删除线 ~~  </p>
+<hr>
+<h4>换行</h4>
+<p>在行尾添加两个空格加回车表示换行  </p>
+<hr>
+<h4>列表</h4>
+<p>以符号<code>-</code>、<code>+</code>或<code>*</code>标记为无序列表，有序列表则直接在文字前加<code>1. 2. 3.</code>即可</p>
+<ul>
+<li>list1</li>
+<li>list2</li>
+<li>
+<p>list3</p>
+</li>
+<li>
+<p>list4</p>
+</li>
+<li>list5</li>
+</ul>
+<hr>
+<h4>引用</h4>
+<p>只需要在文本前加入 <code>&gt;</code> 这种尖括号（大于号）即可，区块引用可以嵌套</p>
+<blockquote>
+<p>我是引用</p>
+<blockquote>
+<p>我是引用的引用  </p>
+</blockquote>
+</blockquote>
+<hr>
+<h4>链接与图片</h4>
+<p>链接以符号<code>[]()</code>标识，图片与链接的语法很像，区别为在最前面添加了一个<code>!</code>  </p>
+<p>链接: <a href="https://www.baidu.com">百度</a>
+图片: <img alt="github图片" src="https://assets-cdn.github.com/favicon.ico">  </p>
+<hr>
+<h4>代码块</h4>
+<p>只需要有3对```(数字1左边的按键)把代码块包裹起来就可以了</p>
+<div class="highlight"><pre><span></span>我是代码块
+我是代码块
+</pre></div>
+
+
+<p>[^备注]：使用1对```表示行内代码</p>
+<hr>
+<h4>水平线</h4>
+<p>使用三个<code>-</code>或<code>*</code>标记为水平线</p>
+<hr>
+<h4>待办事项</h4>
+<p>使用<code>- []</code>(未完成)<code>- [x]</code>(已完成)</p>
+<ul>
+<li>[ ] 未完成待办事项</li>
+<li>[x] 已完成待办事项</li>
+</ul>
+  </div>
+
+
+
+        </div>
+
+          <div class="col-md-3">
+  <div class="well">
+
+    <p><abbr title="2017-06-07T11:21:38+08:00"><i class="fa fa-calendar"></i> 周三 07 六月 2017</abbr></p>
+
+      <p><address>
+        <i class="fa fa-user"></i> By
+          <a href="http://127.0.0.1:8000/author/sopuy.html" rel="author">sopuy</a>
+      </address></p>
+
+    <hr/>
+
+      <p>
+              <a href="http://127.0.0.1:8000/category/notes.html" rel="tag"
+                  data-toggle="tooltip" class="label label-info"
+                  title="2 articles in this category">Notes</a>
+            <a href="/tag/markdown.html" data-toggle="tooltip"
+      class="label label-default"
+      title="1 article with this tag">markdown</a>
+      </p>
+      <hr/>
+
+
+
+  </div>
+            
+          </div>
+
+      </div>
+
+    </div>
+
+    <!-- TODO: make footer sticky -->
+    <footer class="container-fluid">
+      <div class="container">
+        <div class="row">
+
+            <div class="col-md-2">
+                <h5>Social</h5>
+                <ul class="list-unstyled">
+                  <li>  <a href="https://github.com/sopuy">
+      <i class="fa fa-github"></i>
+    github
+  </a></li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <h5>Links</h5>
+                <ul class="list-unstyled">
+                  <li>  <a href="https://blog.52itstyle.com/">
+      <i class="fa fa-external-link"></i>
+    柒's Blog
+  </a></li>
+                  <li>  <a href="https://hubojing.github.io/">
+      <i class="fa fa-external-link"></i>
+    胡博靖
+  </a></li>
+                  <li>  <a href="http://wuchong.me/">
+      <i class="fa fa-external-link"></i>
+    WuChong
+  </a></li>
+                </ul>
+            </div>
+
+          <div class="col-md-2">
+            <h5>Browse content by</h5>
+            <ul class="list-unstyled">
+                <li><a href="http://127.0.0.1:8000/categories.html"><i class="fa fa-tags"></i> Categories</a></li>
+                <li><a href="http://127.0.0.1:8000/archives.html"><i class="fa fa-calendar"></i> Dates</a></li>
+                <li><a href="http://127.0.0.1:8000/tags.html"><i class="fa fa-tag"></i> Tags</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-2 text-muted">
+            <h5>Copyright notice</h5>
+            <p>© Copyright 2017-2018 sopuy.</p>
+          </div>
+
+          <div class="col-md-2 text-muted">
+            <h5>声明</h5>
+              <p>本博客所有文章除特别声明外，均采用<a href="https://creativecommons.org/licenses/by-nc-sa/3.0/">  CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！</p>
+          </div>
+
+          <div class="col-md-2">
+          </div>
+
+        </div>
+      </div>
+
+      <h5 class="text-right"><a href="#"><i class="fa fa-arrow-up"></i> Back to top</a></h5>
+
+      <div class="container">
+        <div class="row col-md-12 text-muted text-center">
+          Site generated by <a href="https://getpelican.com"> Pelican</a>.<br/>
+          <!-- <a href="https://github.com/kdeldycke/plumage"> Plumage</a> theme by <a href="https://kevin.deldycke.com">Kevin Deldycke</a>. -->
+        </div>
+      </div>
+
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fitvids/1.1.0/jquery.fitvids.min.js"></script>
+    <script src="http://127.0.0.1:8000/theme/js/jquery.mglass.js"></script>
+    <script src="http://127.0.0.1:8000/theme/js/application.js"></script>
+
+  </body>
+</html>

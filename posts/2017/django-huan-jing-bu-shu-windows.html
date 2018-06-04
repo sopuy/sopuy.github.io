@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>  Django 环境部署(windows)
+ | sopuy's blog</title>
+
+    <meta name="author" content="sopuy"/>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"/>
+    <link rel="stylesheet" href="http://127.0.0.1:8000/theme/css/jquery.mglass.css"/>
+    <link rel="stylesheet" href="http://127.0.0.1:8000/theme/css/pygment-solarized-dark.css"/>
+    <link rel="stylesheet" href="http://127.0.0.1:8000/theme/css/style.css"/>
+
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'/>
+    <link href='https://fonts.googleapis.com/css?family=Istok+Web' rel='stylesheet' type='text/css'/>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Sans+Mono' rel='stylesheet' type='text/css'/>
+
+
+    <link rel="icon" href="http://127.0.0.1:8000/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="http://127.0.0.1:8000/favicon.ico" type="image/x-icon">
+
+    <!-- Feeds -->
+
+
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <div class="page-header">
+        <h1><a href="http://127.0.0.1:8000">sopuy's blog</a> <small></small></h1>
+      </div>
+
+      <nav class="navbar navbar-default">
+
+        <!-- Hamburger menu for mobile -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#plumage-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="http://127.0.0.1:8000" title="">sopuy's blog</a>
+        </div>
+
+        <!-- Menus and search forms -->
+        <div class="collapse navbar-collapse" id="plumage-navbar-collapse-1">
+
+          <ul class="nav navbar-nav">
+            
+
+<li >
+                  <a href="http://127.0.0.1:8000/category/notes.html">Notes</a>
+                </li>
+<li  class="active" >
+                  <a href="http://127.0.0.1:8000/category/python.html">Python <span class="sr-only">(current)</span></a>
+                </li>
+
+<li >
+                <a href="http://127.0.0.1:8000/pages/about.html">About</a>
+              </li>
+          </ul>
+
+
+            <form class="navbar-form navbar-right" role="search" action="http://127.0.0.1:8000/search.html" onsubmit="return validateForm(this.elements['q'].value);">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" name="q" id="tipue_search_input" class="form-control search-query" placeholder="Search" required />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit"><i class="fa
+                        fa-search fa-fw"></i></button>
+                  </span>
+                </div>
+              </div>
+            </form>
+
+        </div>
+
+      </nav>
+
+    </div>
+
+
+    <div class="container main">
+
+
+      <div class="row">
+        <div class=" col-md-9  ">
+  <h1>
+    <a href="http://127.0.0.1:8000/posts/2017/django-huan-jing-bu-shu-windows.html" rel="bookmark" title="Permalink to Django 环境部署(windows)">Django 环境部署(windows)</a>
+  </h1>
+        </div>
+      </div>
+
+      <div class="row">
+
+
+        <div class=" col-md-9 " id="content" role="main">
+  
+
+  <div>
+    <h1>Django 环境部署</h1>
+<h3>安装前准备（windows 10环境）：</h3>
+<p><!--more--><br>
+1. 安装python<br>
+2. 安装virtualenv  <code>pip install virtualenv</code><br>
+3. 创建虚拟目录  </p>
+<div class="highlight"><pre><span></span><span class="n">d</span><span class="o">:</span>
+<span class="n">cd</span> <span class="n">project</span>
+<span class="n">virtualenv</span> <span class="n">django_env</span>
+<span class="err">新建项目：</span><span class="n">django</span><span class="o">-</span><span class="n">admin</span><span class="o">.</span><span class="na">py</span> <span class="n">startproject</span> <span class="n">project</span><span class="o">-</span><span class="n">name</span>
+<span class="err">新建</span><span class="n">app</span><span class="err">：</span><span class="n">python</span> <span class="n">manage</span><span class="o">.</span><span class="na">py</span> <span class="n">startapp</span> <span class="n">app</span><span class="o">-</span><span class="n">name</span> <span class="err">或</span> <span class="n">django</span><span class="o">-</span><span class="n">admin</span><span class="o">.</span><span class="na">py</span> <span class="n">startapp</span> <span class="n">app</span><span class="o">-</span><span class="n">name</span>
+<span class="err">同步数据库：</span><span class="n">python</span> <span class="n">manage</span><span class="o">.</span><span class="na">py</span> <span class="n">migrate</span>
+<span class="err">使用开发服务器：</span><span class="n">python</span> <span class="n">manage</span><span class="o">.</span><span class="na">py</span> <span class="n">runserver</span> <span class="mi">0</span><span class="o">:</span><span class="mi">8000</span>
+<span class="err">清空数据库：</span><span class="n">python</span> <span class="n">manage</span><span class="o">.</span><span class="na">py</span> <span class="n">flush</span>
+<span class="err">创建超管：</span><span class="n">python</span> <span class="n">manage</span><span class="o">.</span><span class="na">py</span> <span class="n">createsuperuser</span>
+<span class="err">导出导入数据：</span><span class="n">python</span> <span class="n">manage</span><span class="o">.</span><span class="na">py</span> <span class="n">dumpdata</span> <span class="n">appname</span> <span class="o">&gt;</span> <span class="n">appname</span><span class="o">.</span><span class="na">jso或python</span> <span class="n">manage</span><span class="o">.</span><span class="na">py</span> <span class="n">loaddata</span> <span class="n">appname</span><span class="o">.</span><span class="na">json</span>
+<span class="n">django命令行</span><span class="err">：</span><span class="n">python</span> <span class="n">manage</span><span class="o">.</span><span class="na">py</span> <span class="n">shell</span>
+<span class="err">数据库命令行：</span><span class="n">python</span> <span class="n">manage</span><span class="o">.</span><span class="na">py</span> <span class="n">dbshellenv</span>
+<span class="n">cd</span> <span class="n">django_env</span>
+<span class="n">scripts</span><span class="o">\</span><span class="n">active</span>      <span class="err">#</span> <span class="err">激活虚拟环境</span>
+</pre></div>
+
+
+<hr>
+<h3>安装django</h3>
+<ol>
+<li>安装django<code>pip install django</code>或者安装指定版本<code>pip install django==1.11</code>  </li>
+<li>创建项目：在目录'(django_env) D:\project\django\django_env'下，执行<code>django-admin startproject website</code>  </li>
+<li>
+<p>创建应用：在目录'(django_env) D:\project\django\django_env\website'下，执行<code>mange.py startapp tech</code>  </p>
+</li>
+<li>
+<p>常用命令：  </p>
+</li>
+</ol>
+<div class="highlight"><pre><span></span><span class="err">查看</span><span class="n">django安装路径</span><span class="err">：</span> <span class="n">python</span> <span class="o">-</span><span class="n">c</span> <span class="s1">&#39;import django;print(django.__path__)&#39;</span>
+<span class="err">查看</span><span class="n">django版本</span><span class="err">：</span> <span class="n">python</span> <span class="o">-</span><span class="n">c</span> <span class="s1">&#39;import django;print(django.get_version())&#39;</span>
+
+<span class="err">创建初始静态文件：</span><span class="n">python</span> <span class="n">manage</span><span class="o">.</span><span class="n">py</span> <span class="n">collectstatic</span>
+<span class="err">更多：</span><span class="n">python</span> <span class="n">manage</span><span class="o">.</span><span class="n">py</span>
+</pre></div>
+
+
+<hr>
+<h3>配置数据库mysql</h3>
+<ol>
+<li><a href="https://dev.mysql.com/downloads/mysql/">下载mysql</a>    </li>
+<li>解压下载的mysql压缩包并配置<code>my.ini</code>  </li>
+</ol>
+<div class="highlight"><pre><span></span><span class="k">[mysqld]</span>
+<span class="na">basedir</span> <span class="o">=</span> <span class="s">D:\project\mysql-5.7.17-winx64</span>
+<span class="na">datadir</span> <span class="o">=</span> <span class="s">D:\project\mysql-5.7.17-winx64\data</span>
+<span class="na">port</span> <span class="o">=</span> <span class="s">3306</span>
+
+<span class="na">sql_mode</span><span class="o">=</span><span class="s">NO_ENGINE_SUBSTITUTION,STRICT_TRANS_TABLES</span>
+<span class="na">default-storage-engine</span><span class="o">=</span><span class="s">INNODB</span>
+
+<span class="k">[mysql]</span>
+<span class="na">default-character-set</span><span class="o">=</span><span class="s">utf8</span>
+</pre></div>
+
+
+<ol>
+<li>以管理员身份运行‘命令提示符CMD’，将目录切换到你解压文件的bin目录，使用命令<code>mysqld install</code>安装mysql  </li>
+<li>启动mysql服务<code>net start mysql</code>  </li>
+<li>创建数据库：<code>create database website default charset utf8;</code>  </li>
+<li>常用语句  </li>
+</ol>
+<div class="highlight"><pre><span></span>use mysql; 
+insert into mysql.user(Host,User,Password) values (&#39;localhost&#39;,&#39;sopuy&#39;,password(&#39;111111&#39;)); 
+create database website default charset utf8; 
+grant all privileges on website.* to sopuy@localhost; 
+
+grant all privileges on website.* to sopuy@&#39;1.2.3.%&#39; identified by &#39;sopuy&#39;; 
+update mysql.user set password=password(&#39;111111&#39;) where User=&quot;sopuy&quot;; 
+
+flush privileges; 
+select user , host from user; 
+</pre></div>
+
+
+<hr>
+<h3>配置django</h3>
+<ol>
+<li>安装python-mysql连接库：<code>pip install pymysql</code>  </li>
+<li>修改django配置文件<code>D:\project\django\django_env\website\website\settings.py</code>  </li>
+</ol>
+<div class="highlight"><pre><span></span>DATABASES = {
+    &#39;default&#39;: {
+        #&#39;ENGINE&#39;: &#39;django.db.backends.sqlite3&#39;,
+        #&#39;NAME&#39;: os.path.join(BASE_DIR, &#39;db.sqlite3&#39;),
+        &#39;ENGINE&#39;: &#39;django.db.backends.mysql&#39;,
+        &#39;NAME&#39;: &#39;website&#39;,
+        &#39;USER&#39;:&#39;root&#39;,
+        &#39;PASSWORD&#39;: &#39;&#39;,
+        &#39;HOST&#39;:&#39;&#39;,
+        &#39;PORT&#39;:&#39;&#39;,
+    }
+}
+</pre></div>
+
+
+<ol>
+<li>修改<code>`D:\project\django\django_env\website\website\__init__.py</code></li>
+</ol>
+<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pymysql</span>
+<span class="n">pymysql</span><span class="o">.</span><span class="n">install_as_MySQLdb</span><span class="p">()</span>
+</pre></div>
+
+
+<ol>
+<li>同步数据库：<code>python manage.py migrate</code>  </li>
+<li>创建超管：<code>python manage.py createsuperuser</code>  </li>
+<li>运行开发服务器：<code>python manage.py runserver 0:8000</code>或者<code>python manage.py runserver 0.0.0.0:8000</code>  </li>
+<li><a href="http://127.0.0.1:8000/admin/">访问开发服务器</a>  </li>
+</ol>
+<hr>
+<h3>其他</h3>
+<ul>
+<li>去除密码复杂性校验  <blockquote>
+<p>修改配置文件<code>D:\project\django\django_env\Lib\site-packages\django\contrib\auth\password_validation.py</code><br>
+通过Nginx部署django(Nginx+uwsgi+django)</p>
+</blockquote>
+</li>
+</ul>
+  </div>
+
+
+
+        </div>
+
+          <div class="col-md-3">
+  <div class="well">
+
+    <p><abbr title="2017-06-26T17:27:39+08:00"><i class="fa fa-calendar"></i> 周一 26 六月 2017</abbr></p>
+
+      <p><address>
+        <i class="fa fa-user"></i> By
+          <a href="http://127.0.0.1:8000/author/sopuy.html" rel="author">sopuy</a>
+      </address></p>
+
+    <hr/>
+
+      <p>
+              <a href="http://127.0.0.1:8000/category/python.html" rel="tag"
+                  data-toggle="tooltip" class="label label-info"
+                  title="4 articles in this category">Python</a>
+            <a href="/tag/python.html" data-toggle="tooltip"
+      class="label label-default"
+      title="4 articles with this tag">python</a>
+            <a href="/tag/pyenv.html" data-toggle="tooltip"
+      class="label label-default"
+      title="2 articles with this tag">pyenv</a>
+            <a href="/tag/django.html" data-toggle="tooltip"
+      class="label label-default"
+      title="1 article with this tag">django</a>
+      </p>
+      <hr/>
+
+
+
+  </div>
+            
+          </div>
+
+      </div>
+
+    </div>
+
+    <!-- TODO: make footer sticky -->
+    <footer class="container-fluid">
+      <div class="container">
+        <div class="row">
+
+            <div class="col-md-2">
+                <h5>Social</h5>
+                <ul class="list-unstyled">
+                  <li>  <a href="https://github.com/sopuy">
+      <i class="fa fa-github"></i>
+    github
+  </a></li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <h5>Links</h5>
+                <ul class="list-unstyled">
+                  <li>  <a href="https://blog.52itstyle.com/">
+      <i class="fa fa-external-link"></i>
+    柒's Blog
+  </a></li>
+                  <li>  <a href="https://hubojing.github.io/">
+      <i class="fa fa-external-link"></i>
+    胡博靖
+  </a></li>
+                  <li>  <a href="http://wuchong.me/">
+      <i class="fa fa-external-link"></i>
+    WuChong
+  </a></li>
+                </ul>
+            </div>
+
+          <div class="col-md-2">
+            <h5>Browse content by</h5>
+            <ul class="list-unstyled">
+                <li><a href="http://127.0.0.1:8000/categories.html"><i class="fa fa-tags"></i> Categories</a></li>
+                <li><a href="http://127.0.0.1:8000/archives.html"><i class="fa fa-calendar"></i> Dates</a></li>
+                <li><a href="http://127.0.0.1:8000/tags.html"><i class="fa fa-tag"></i> Tags</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-2 text-muted">
+            <h5>Copyright notice</h5>
+            <p>© Copyright 2017-2018 sopuy.</p>
+          </div>
+
+          <div class="col-md-2 text-muted">
+            <h5>声明</h5>
+              <p>本博客所有文章除特别声明外，均采用<a href="https://creativecommons.org/licenses/by-nc-sa/3.0/">  CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！</p>
+          </div>
+
+          <div class="col-md-2">
+          </div>
+
+        </div>
+      </div>
+
+      <h5 class="text-right"><a href="#"><i class="fa fa-arrow-up"></i> Back to top</a></h5>
+
+      <div class="container">
+        <div class="row col-md-12 text-muted text-center">
+          Site generated by <a href="https://getpelican.com"> Pelican</a>.<br/>
+          <!-- <a href="https://github.com/kdeldycke/plumage"> Plumage</a> theme by <a href="https://kevin.deldycke.com">Kevin Deldycke</a>. -->
+        </div>
+      </div>
+
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fitvids/1.1.0/jquery.fitvids.min.js"></script>
+    <script src="http://127.0.0.1:8000/theme/js/jquery.mglass.js"></script>
+    <script src="http://127.0.0.1:8000/theme/js/application.js"></script>
+
+  </body>
+</html>

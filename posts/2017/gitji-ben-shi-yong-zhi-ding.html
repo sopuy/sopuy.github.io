@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>  git基本使用 [置顶]
+ | sopuy's blog</title>
+
+    <meta name="author" content="sopuy"/>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"/>
+    <link rel="stylesheet" href="http://127.0.0.1:8000/theme/css/jquery.mglass.css"/>
+    <link rel="stylesheet" href="http://127.0.0.1:8000/theme/css/pygment-solarized-dark.css"/>
+    <link rel="stylesheet" href="http://127.0.0.1:8000/theme/css/style.css"/>
+
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'/>
+    <link href='https://fonts.googleapis.com/css?family=Istok+Web' rel='stylesheet' type='text/css'/>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Sans+Mono' rel='stylesheet' type='text/css'/>
+
+
+    <link rel="icon" href="http://127.0.0.1:8000/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="http://127.0.0.1:8000/favicon.ico" type="image/x-icon">
+
+    <!-- Feeds -->
+
+
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <div class="page-header">
+        <h1><a href="http://127.0.0.1:8000">sopuy's blog</a> <small></small></h1>
+      </div>
+
+      <nav class="navbar navbar-default">
+
+        <!-- Hamburger menu for mobile -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#plumage-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="http://127.0.0.1:8000" title="">sopuy's blog</a>
+        </div>
+
+        <!-- Menus and search forms -->
+        <div class="collapse navbar-collapse" id="plumage-navbar-collapse-1">
+
+          <ul class="nav navbar-nav">
+            
+
+<li  class="active" >
+                  <a href="http://127.0.0.1:8000/category/notes.html">Notes <span class="sr-only">(current)</span></a>
+                </li>
+<li >
+                  <a href="http://127.0.0.1:8000/category/python.html">Python</a>
+                </li>
+
+<li >
+                <a href="http://127.0.0.1:8000/pages/about.html">About</a>
+              </li>
+          </ul>
+
+
+            <form class="navbar-form navbar-right" role="search" action="http://127.0.0.1:8000/search.html" onsubmit="return validateForm(this.elements['q'].value);">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" name="q" id="tipue_search_input" class="form-control search-query" placeholder="Search" required />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit"><i class="fa
+                        fa-search fa-fw"></i></button>
+                  </span>
+                </div>
+              </div>
+            </form>
+
+        </div>
+
+      </nav>
+
+    </div>
+
+
+    <div class="container main">
+
+
+      <div class="row">
+        <div class=" col-md-9  ">
+  <h1>
+    <a href="http://127.0.0.1:8000/posts/2017/gitji-ben-shi-yong-zhi-ding.html" rel="bookmark" title="Permalink to git基本使用 [置顶]">git基本使用 [置顶]</a>
+  </h1>
+        </div>
+      </div>
+
+      <div class="row">
+
+
+        <div class=" col-md-9 " id="content" role="main">
+  
+
+  <div>
+    <h3>git基本使用</h3>
+<hr>
+<p><a href="https://git-scm.com/">git下载</a>
+<a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/00137583770360579bc4b458f044ce7afed3df579123eca000">搭建git服务器</a></p>
+<!--more-->
+
+<h5>git基本概念</h5>
+<blockquote>
+<p>基本概念：git有工作区与暂存区的概念，工作区及创建git仓库的系统目录(就是你在电脑里能看到的目录)工作区有一个隐藏目录.git，这个不算工作区，而是Git的版本库。
+Git的版本库里存了很多东西，其中最重要的就是称为stage（或者叫index）的暂存区，还有Git为我们自动创建的第一个分支master，以及指向master的一个指针叫HEAD。</p>
+<p>我们把文件往Git版本库里添加的时候，是分两步执行的：  </p>
+<blockquote>
+<p>第一步是用git add把文件添加进去，实际上就是把文件修改添加到暂存区；</p>
+<p>第二步是用git commit提交更改，实际上就是把暂存区的所有内容提交到当前分支。</p>
+</blockquote>
+<p>因为我们创建Git版本库时，Git自动为我们创建了唯一一个master分支，所以，现在，git commit就是往master分支上提交更改。
+每次准备提交前，先用git status 看下，是不是都已暂存起来了，然后再运行提交命令git commit
+另外，git commit 加上-a 选项，Git就会自动把所有已经跟踪过的文件暂存起来一并提交，从而跳过git add 步骤。</p>
+</blockquote>
+<hr>
+<h5>git样例</h5>
+<ol>
+<li>
+<p>首先，选择一个合适的地方，创建一个空目录
+    <code>mkdir learngit</code></p>
+</li>
+<li>
+<p>通过git init命令把这个目录变成Git可以管理的仓库：
+    <code>cd learngit</code>
+    <code>git init</code></p>
+</li>
+<li>添加(修改)文件(可连续多次修改，一次提交)
+    <code>git add readme.txt</code>
+    <code>git add .</code> 添加当前目录所有文件,--force强制添加</li>
+<li>提交修改
+    <code>git commit -m "add readme"</code>；<code>git commit -a</code>直接提交</li>
+<li>查看日志
+    <code>git reflog</code>或者<code>git log</code></li>
+<li>查看文件状态
+    <code>git status</code>可查看是否提交到了工作区</li>
+<li>
+<p>版本回退reset、撤销修改checkout
+    <code>git reset hard readme.txt</code> 撤销修改暂存区
+    <code>git reset --hard commit_id</code>    可回退到指定版本，commit_id通过<code>git reflog</code>获取
+    <code>git reset --hard HEAD^</code>    回退到上一版本<br>
+    首先，Git必须知道当前版本是哪个版本，在Git中，用HEAD表示当前版本，也就是最新的提交3628164...882e1e0（注意我的提交ID和你的肯定不一样），上一个版本就是HEAD^，上上一个版本就是HEAD^^，当然往上100个版本写100个^比较容易数不过来，所以写成HEAD~100。  </p>
+<p>穿梭前，用git log可以查看提交历史，以便确定要回退到哪个版本。<br>
+要重返未来，用git reflog查看命令历史，以便确定要回到未来的哪个版本。  </p>
+<p><code>git checkout -- readme.txt</code> 把readme.txt文件在工作区的修改全部撤销
+8. 删除文件(重命名)
+<code>git rm readme.txt</code>      删除工作区和暂存区
+<code>git rm --cached readme.txt</code>     删除暂存区，不删工作区
+<code>git mv readme.txt readme.md</code>      移动或重命名
+9. 分支管理
+git checkout -b dev
+git checkout命令加上-b参数表示创建并切换，相当于以下两条命令：</p>
+<p>git branch dev          --创建分支
+git branch -d dev       --删除分支
+git checkout dev        --切换分支
+git merge dev           --git merge命令用于合并指定分支到当前分支</p>
+</li>
+</ol>
+<hr>
+<h5>git分支</h5>
+<p>首先，我们创建dev分支，然后切换到dev分支：
+<code>git checkout -b dev</code>
+git checkout命令加上-b参数表示创建并切换，相当于以下两条命令：</p>
+<p><code>git merge dev</code>          --git merge命令用于合并指定分支到当前分支
+<code>git branch dev</code>          --创建分支
+<code>git branch -d dev</code>      --删除分支
+<code>git checkout dev</code>        --切换分支
+<code>git log dev ^master</code>  --查看 dev 有，而 master 中没有的</p>
+<p>因为创建、合并和删除分支非常快，所以Git鼓励你使用分支完成某个任务，合并后再删掉分支，这和直接在master分支上工作效果是一样的，但过程更安全。</p>
+<p>git stash   --Git还提供了一个stash功能，可以把当前工作现场“储藏”起来，等以后恢复现场后继续工作。
+git stash list  --查看stash列表<br>
+Git把stash内容存在某个地方了，但是需要恢复一下，有两个办法：
+一是用git stash apply恢复，但是恢复后，stash内容并不删除，你需要用git stash drop来删除；另一种方式是用git stash pop，恢复的同时把stash内容也删了：</p>
+<hr>
+<h5>git关联github</h5>
+<ol>
+<li>创建ssh key，以便关联远程仓库
+    <code>ssh-keygen -t rsa -C "youremail@example.com"</code></li>
+<li>
+<p>关联一个远程库，使用命令:
+    <code>git remote add origin git@server-name:path/repo-name.git</code>；</p>
+</li>
+<li>
+<p>关联后，使用命令<code>git push -u origin master</code>第一次推送master分支的所有内容；</p>
+</li>
+<li>
+<p>此后，每次本地提交后，只要有必要，就可以使用命令:
+    <code>git push origin branch-name</code>
+    <code>git push origin master</code>推送最新修改。  </p>
+</li>
+<li>
+<p><code>git remote</code>或者<code>git remote -v</code>    查看远程仓库</p>
+</li>
+</ol>
+<hr>
+<h5>git clone</h5>
+<p>git clone git@github.com:michaelliao/gitskills.git<br>
+- 实际上，Git支持多种协议，默认的git://使用ssh，但也可以使用https等其他协议。
+- 使用https除了速度慢以外，还有个最大的麻烦是每次推送都必须输入口令，但是在某些只开放http端口的公司内部就无法使用ssh协议而只能用https。  </p>
+<hr>
+<h5>标签管理</h5>
+<p>在Git中打标签非常简单，首先，切换到需要打标签的分支上，然后，敲命令
+<code>git tag &lt;name&gt;</code>就可以打一个新标签,默认标签是打在最新提交的commit上的。 </p>
+<p>可以用<code>git show &lt;tagname&gt;</code>查看标签信息。
+命令<code>git tag &lt;name&gt;</code>用于新建一个标签，默认为HEAD，最新提交的commit上；<br>
+<code>git tag v0.9 "commit id"</code>也可以指定一个commit id；<br>
+<code>git tag -a &lt;tagname&gt; -m "blablabla..."</code>可以指定标签信息；<br>
+<code>git tag -s &lt;tagname&gt; -m "blablabla..."</code>可以用PGP签名标签；<br>
+命令<code>git tag</code>可以查看所有标签。  <br>
+命令<code>git push origin &lt;tagname&gt;</code>可以推送一个本地标签；<br>
+命令<code>git push origin --tags</code>可以推送全部未推送过的本地标签；<br>
+命令<code>git tag -d &lt;tagname&gt;</code>可以删除一个本地标签；<br>
+命令<code>git push origin :refs/tags/&lt;tagname&gt;</code>可以删除一个远程标签。  </p>
+<hr>
+<h5>.gitignore的文件忽略设置</h5>
+<p>【例子】</p>
+<h5>忽略<em>.o和</em>.a文件</h5>
+<p>*.[oa]</p>
+<h5>忽略<em>.b和</em>.B文件，my.b除外</h5>
+<p>*.[bB]
+!my.b</p>
+<h5>忽略dbg文件和dbg目录</h5>
+<p>dbg</p>
+<h5>只忽略dbg目录，不忽略dbg文件</h5>
+<p>dbg/</p>
+<h5>只忽略dbg文件，不忽略dbg目录</h5>
+<p>dbg
+!dbg/</p>
+<h5>只忽略当前目录下的dbg文件和目录，子目录的dbg不在忽略范围内</h5>
+<p>/dbg</p>
+<hr>
+<h5>git常用命令</h5>
+<p>设置标识
+git config --global user.name "Your Name"
+git config --global user.email "email@example.com"</p>
+<p>git init        --创建管理仓库，目录初始化
+git add     --创建跟踪文件/暂存文件
+git status      --检查当前文件状态
+git commit      --提交修改
+git commit -a   --不暂存，直接提交 
+git diff        --比对文件
+git reset       --恢复
+git rm      --删除工作区和暂存区
+git rm --cached     --删除暂存区，不删工作区
+git mv      --移动或重命名
+git log     --查看日志
+git log --pretty=oneline    --简洁日志</p>
+<p>用命令git add告诉Git，把文件添加到仓库：
+git add readme.txt</p>
+<p>用命令git commit告诉Git，把文件提交到仓库 ：
+git commit -m "wrote a readme file"</p>
+<p>git status
+git diff
+git log
+如果嫌输出信息太多，看得眼花缭乱的，可以试试加上--pretty=oneline参数：
+git log --pretty=oneline</p>
+<p>Git提供了一个命令git reflog用来记录你的每一次命令</p>
+<p>从工作区和暂存区删除
+git rm
+从暂存区删除
+git rm --cached</p>
+<p>git checkout -- file可以丢弃工作区的修改：
+$ git checkout -- readme.txt</p>
+<p>列出master目录结构
+git ls-tree master</p>
+<h2><a href="http://www.liaoxuefeng.com/">git教程</a></h2>
+<h5>git服务器搭建</h5>
+<ol>
+<li>安装git<code>yum install git</code></li>
+<li>创建用户<code>useradd sopuy</code>  </li>
+<li>在目录<code>/home/sopuy/</code>下执行<code>git  init --bare web.git</code>，会生成一个<code>web.git</code>的目录  </li>
+<li>更改目录权限<code>chown -R sopuy:sopuy web.git</code>  </li>
+<li>禁用用户<code>sopuy</code>shell登录，修改<code>/etc/passwd</code>,修改为<code>sopuy:x:501:501::/home/sopuy:/bin/git-shell</code>  </li>
+<li>克隆远程仓库<code>git clone git@server-ip:/home/sopuy/web.git</code>  </li>
+<li>
+<p>管理公钥：把每个人的公钥放到<code>/home/sopuy/.ssh/authorized_keys</code></p>
+</li>
+<li>
+<p>管理公钥可以使用<a href="https://github.com/res0nat0r/gitosis">Gitosis</a>  </p>
+</li>
+<li>管理权限可以使用<a href="https://github.com/sitaramc/gitolite">gitolite</a>  </li>
+</ol>
+  </div>
+
+
+
+        </div>
+
+          <div class="col-md-3">
+  <div class="well">
+
+    <p><abbr title="2017-06-08T14:21:38+08:00"><i class="fa fa-calendar"></i> 周四 08 六月 2017</abbr></p>
+
+      <p><address>
+        <i class="fa fa-user"></i> By
+          <a href="http://127.0.0.1:8000/author/sopuy.html" rel="author">sopuy</a>
+      </address></p>
+
+    <hr/>
+
+      <p>
+              <a href="http://127.0.0.1:8000/category/notes.html" rel="tag"
+                  data-toggle="tooltip" class="label label-info"
+                  title="2 articles in this category">Notes</a>
+            <a href="/tag/git.html" data-toggle="tooltip"
+      class="label label-default"
+      title="1 article with this tag">git</a>
+      </p>
+      <hr/>
+
+
+
+  </div>
+            
+          </div>
+
+      </div>
+
+    </div>
+
+    <!-- TODO: make footer sticky -->
+    <footer class="container-fluid">
+      <div class="container">
+        <div class="row">
+
+            <div class="col-md-2">
+                <h5>Social</h5>
+                <ul class="list-unstyled">
+                  <li>  <a href="https://github.com/sopuy">
+      <i class="fa fa-github"></i>
+    github
+  </a></li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <h5>Links</h5>
+                <ul class="list-unstyled">
+                  <li>  <a href="https://blog.52itstyle.com/">
+      <i class="fa fa-external-link"></i>
+    柒's Blog
+  </a></li>
+                  <li>  <a href="https://hubojing.github.io/">
+      <i class="fa fa-external-link"></i>
+    胡博靖
+  </a></li>
+                  <li>  <a href="http://wuchong.me/">
+      <i class="fa fa-external-link"></i>
+    WuChong
+  </a></li>
+                </ul>
+            </div>
+
+          <div class="col-md-2">
+            <h5>Browse content by</h5>
+            <ul class="list-unstyled">
+                <li><a href="http://127.0.0.1:8000/categories.html"><i class="fa fa-tags"></i> Categories</a></li>
+                <li><a href="http://127.0.0.1:8000/archives.html"><i class="fa fa-calendar"></i> Dates</a></li>
+                <li><a href="http://127.0.0.1:8000/tags.html"><i class="fa fa-tag"></i> Tags</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-2 text-muted">
+            <h5>Copyright notice</h5>
+            <p>© Copyright 2017-2018 sopuy.</p>
+          </div>
+
+          <div class="col-md-2 text-muted">
+            <h5>声明</h5>
+              <p>本博客所有文章除特别声明外，均采用<a href="https://creativecommons.org/licenses/by-nc-sa/3.0/">  CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！</p>
+          </div>
+
+          <div class="col-md-2">
+          </div>
+
+        </div>
+      </div>
+
+      <h5 class="text-right"><a href="#"><i class="fa fa-arrow-up"></i> Back to top</a></h5>
+
+      <div class="container">
+        <div class="row col-md-12 text-muted text-center">
+          Site generated by <a href="https://getpelican.com"> Pelican</a>.<br/>
+          <!-- <a href="https://github.com/kdeldycke/plumage"> Plumage</a> theme by <a href="https://kevin.deldycke.com">Kevin Deldycke</a>. -->
+        </div>
+      </div>
+
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fitvids/1.1.0/jquery.fitvids.min.js"></script>
+    <script src="http://127.0.0.1:8000/theme/js/jquery.mglass.js"></script>
+    <script src="http://127.0.0.1:8000/theme/js/application.js"></script>
+
+  </body>
+</html>

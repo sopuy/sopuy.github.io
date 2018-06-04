@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>  python模块学习方法及相关概念
+ | sopuy's blog</title>
+
+    <meta name="author" content="sopuy"/>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"/>
+    <link rel="stylesheet" href="http://127.0.0.1:8000/theme/css/jquery.mglass.css"/>
+    <link rel="stylesheet" href="http://127.0.0.1:8000/theme/css/pygment-solarized-dark.css"/>
+    <link rel="stylesheet" href="http://127.0.0.1:8000/theme/css/style.css"/>
+
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'/>
+    <link href='https://fonts.googleapis.com/css?family=Istok+Web' rel='stylesheet' type='text/css'/>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Sans+Mono' rel='stylesheet' type='text/css'/>
+
+
+    <link rel="icon" href="http://127.0.0.1:8000/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="http://127.0.0.1:8000/favicon.ico" type="image/x-icon">
+
+    <!-- Feeds -->
+
+
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <div class="page-header">
+        <h1><a href="http://127.0.0.1:8000">sopuy's blog</a> <small></small></h1>
+      </div>
+
+      <nav class="navbar navbar-default">
+
+        <!-- Hamburger menu for mobile -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#plumage-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="http://127.0.0.1:8000" title="">sopuy's blog</a>
+        </div>
+
+        <!-- Menus and search forms -->
+        <div class="collapse navbar-collapse" id="plumage-navbar-collapse-1">
+
+          <ul class="nav navbar-nav">
+            
+
+<li >
+                  <a href="http://127.0.0.1:8000/category/notes.html">Notes</a>
+                </li>
+<li  class="active" >
+                  <a href="http://127.0.0.1:8000/category/python.html">Python <span class="sr-only">(current)</span></a>
+                </li>
+
+<li >
+                <a href="http://127.0.0.1:8000/pages/about.html">About</a>
+              </li>
+          </ul>
+
+
+            <form class="navbar-form navbar-right" role="search" action="http://127.0.0.1:8000/search.html" onsubmit="return validateForm(this.elements['q'].value);">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" name="q" id="tipue_search_input" class="form-control search-query" placeholder="Search" required />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit"><i class="fa
+                        fa-search fa-fw"></i></button>
+                  </span>
+                </div>
+              </div>
+            </form>
+
+        </div>
+
+      </nav>
+
+    </div>
+
+
+    <div class="container main">
+
+
+      <div class="row">
+        <div class=" col-md-9  ">
+  <h1>
+    <a href="http://127.0.0.1:8000/posts/2017/pythonmo-kuai-xue-xi-fang-fa-ji-xiang-guan-gai-nian.html" rel="bookmark" title="Permalink to python模块学习方法及相关概念">python模块学习方法及相关概念</a>
+  </h1>
+        </div>
+      </div>
+
+      <div class="row">
+
+
+        <div class=" col-md-9 " id="content" role="main">
+  
+
+  <div>
+    <hr>
+<h1>python模块学习方法及相关概念</h1>
+<!--more-->
+
+<h3>dir()/help()函数</h3>
+<p>想要快速的学会一个Python的模块和方法，两个函数必须要知道，那就是dir()和help():：<br>
+dir():能够快速的以集合的型式列出该模块下的所有内容（类、常量、方法）;<br>
+ help():能够列出模块、关键字、类、方法的内容、描述、语法、使用方法;<br>
+还有更多帮助：<br>
+- 声明编码方式  <br>
+<code>#coding=utf-8</code><br>
+- 查看帮助<br>
+<code>help("import")</code><br>
+- 查看模块的使用<br>
+<code>help("os.path")</code><br>
+- 查看list如何使用<br>
+<code>help("list")</code><br>
+- 查看字符串中find方法使用<br>
+<code>help("str.find")</code><br>
+- 查看内置函数如何使用<br>
+<code>help("open")</code><br>
+- 列出所有已经安装的模块<br>
+<code>help('modules')</code> 
+- 查看所有Python的关键字 
+<code>help("keywords")</code><br>
+- 查看内置函数列表<br>
+<code>dir(__builtins__)</code>  </p>
+<h3>函数、类、模块、包、和库</h3>
+<blockquote>
+<p>简单讲，Package是由很多module组成，来实现某种功能，modules由函数和类组成。库是抽象概念，也可以是各种模块组成。  </p>
+</blockquote>
+<h5>函数</h5>
+<p>理解为数学上的函数就可以了，实现某一功能的代码段。<br>
+- 调用：当函数定义好之后，可以直接调用。</p>
+<blockquote>
+<p>比如：def summ(add1,add2)，那么可以直接调用，即：summ(1,2)  </p>
+</blockquote>
+<h5>类</h5>
+<p>类包含数据说明和一组操作数据或传递消息的函数，类的实例称为对象。<br>
+- 调用：类定义好之后，不能像函数一样直接调用，而需要间接调用。  </p>
+<blockquote>
+<p>比如：class people，那么调用时，a=people(对象)，之后，a.age()等等  </p>
+</blockquote>
+<h5>模块</h5>
+<p>一个完整的Python文件。在物理上的组织方式上为文件（比如math.py）；在逻辑的组织方式上，这个文件为模块（比如math）。<br>
+- 调用：将多个类放在同一个py下，比如放在model.py中，则import model即可调用  </p>
+<h5>包</h5>
+<p>包是一个有层次的文件目录结构，它定义了由n个模块或n个子包组成的python应用程序执行环境。<br>
+通俗一点：包是一个包含<code>__init__.py</code>文件的目录，该目录下一定得有这个<code>__init__.py</code>文件和其它模块或子包。<br>
+- 调用： 创建文件夹，并在文件夹中创建<code>__init__.py</code>文件，调用时直接<code>import '文件夹名'</code>即可  </p>
+<h5>库</h5>
+<p>库的概念是具有相关功能模块的集合。这也是Python的一大特色之一，即具有强大的标准库、第三方库以及自定义模块。库是一个抽象概念，在python中是包和模块的形式。  </p>
+<h1>以上全都是对象。。^_^</h1>
+  </div>
+
+
+
+        </div>
+
+          <div class="col-md-3">
+  <div class="well">
+
+    <p><abbr title="2017-06-14T08:31:36+08:00"><i class="fa fa-calendar"></i> 周三 14 六月 2017</abbr></p>
+
+      <p><address>
+        <i class="fa fa-user"></i> By
+          <a href="http://127.0.0.1:8000/author/sopuy.html" rel="author">sopuy</a>
+      </address></p>
+
+    <hr/>
+
+      <p>
+              <a href="http://127.0.0.1:8000/category/python.html" rel="tag"
+                  data-toggle="tooltip" class="label label-info"
+                  title="4 articles in this category">Python</a>
+            <a href="/tag/python.html" data-toggle="tooltip"
+      class="label label-default"
+      title="4 articles with this tag">python</a>
+      </p>
+      <hr/>
+
+
+
+  </div>
+            
+          </div>
+
+      </div>
+
+    </div>
+
+    <!-- TODO: make footer sticky -->
+    <footer class="container-fluid">
+      <div class="container">
+        <div class="row">
+
+            <div class="col-md-2">
+                <h5>Social</h5>
+                <ul class="list-unstyled">
+                  <li>  <a href="https://github.com/sopuy">
+      <i class="fa fa-github"></i>
+    github
+  </a></li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <h5>Links</h5>
+                <ul class="list-unstyled">
+                  <li>  <a href="https://blog.52itstyle.com/">
+      <i class="fa fa-external-link"></i>
+    柒's Blog
+  </a></li>
+                  <li>  <a href="https://hubojing.github.io/">
+      <i class="fa fa-external-link"></i>
+    胡博靖
+  </a></li>
+                  <li>  <a href="http://wuchong.me/">
+      <i class="fa fa-external-link"></i>
+    WuChong
+  </a></li>
+                </ul>
+            </div>
+
+          <div class="col-md-2">
+            <h5>Browse content by</h5>
+            <ul class="list-unstyled">
+                <li><a href="http://127.0.0.1:8000/categories.html"><i class="fa fa-tags"></i> Categories</a></li>
+                <li><a href="http://127.0.0.1:8000/archives.html"><i class="fa fa-calendar"></i> Dates</a></li>
+                <li><a href="http://127.0.0.1:8000/tags.html"><i class="fa fa-tag"></i> Tags</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-2 text-muted">
+            <h5>Copyright notice</h5>
+            <p>© Copyright 2017-2018 sopuy.</p>
+          </div>
+
+          <div class="col-md-2 text-muted">
+            <h5>声明</h5>
+              <p>本博客所有文章除特别声明外，均采用<a href="https://creativecommons.org/licenses/by-nc-sa/3.0/">  CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！</p>
+          </div>
+
+          <div class="col-md-2">
+          </div>
+
+        </div>
+      </div>
+
+      <h5 class="text-right"><a href="#"><i class="fa fa-arrow-up"></i> Back to top</a></h5>
+
+      <div class="container">
+        <div class="row col-md-12 text-muted text-center">
+          Site generated by <a href="https://getpelican.com"> Pelican</a>.<br/>
+          <!-- <a href="https://github.com/kdeldycke/plumage"> Plumage</a> theme by <a href="https://kevin.deldycke.com">Kevin Deldycke</a>. -->
+        </div>
+      </div>
+
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fitvids/1.1.0/jquery.fitvids.min.js"></script>
+    <script src="http://127.0.0.1:8000/theme/js/jquery.mglass.js"></script>
+    <script src="http://127.0.0.1:8000/theme/js/application.js"></script>
+
+  </body>
+</html>
