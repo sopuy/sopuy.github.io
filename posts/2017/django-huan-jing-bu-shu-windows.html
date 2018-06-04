@@ -109,8 +109,8 @@
   
 
   <div>
-    <h1>Django 环境部署</h1>
-<h3>安装前准备（windows 10环境）：</h3>
+    <h1 id="django">Django 环境部署</h1>
+<h3 id="windows-10">安装前准备（windows 10环境）：</h3>
 <p><!--more--><br>
 1. 安装python<br>
 2. 安装virtualenv  <code>pip install virtualenv</code><br>
@@ -133,7 +133,7 @@
 
 
 <hr>
-<h3>安装django</h3>
+<h3 id="django_1">安装django</h3>
 <ol>
 <li>安装django<code>pip install django</code>或者安装指定版本<code>pip install django==1.11</code>  </li>
 <li>创建项目：在目录'(django_env) D:\project\django\django_env'下，执行<code>django-admin startproject website</code>  </li>
@@ -153,7 +153,7 @@
 
 
 <hr>
-<h3>配置数据库mysql</h3>
+<h3 id="mysql">配置数据库mysql</h3>
 <ol>
 <li><a href="https://dev.mysql.com/downloads/mysql/">下载mysql</a>    </li>
 <li>解压下载的mysql压缩包并配置<code>my.ini</code>  </li>
@@ -191,7 +191,7 @@ select user , host from user;
 
 
 <hr>
-<h3>配置django</h3>
+<h3 id="django_2">配置django</h3>
 <ol>
 <li>安装python-mysql连接库：<code>pip install pymysql</code>  </li>
 <li>修改django配置文件<code>D:\project\django\django_env\website\website\settings.py</code>  </li>
@@ -226,7 +226,7 @@ select user , host from user;
 <li><a href="http://127.0.0.1:8000/admin/">访问开发服务器</a>  </li>
 </ol>
 <hr>
-<h3>其他</h3>
+<h3 id="_1">其他</h3>
 <ul>
 <li>去除密码复杂性校验  <blockquote>
 <p>修改配置文件<code>D:\project\django\django_env\Lib\site-packages\django\contrib\auth\password_validation.py</code><br>

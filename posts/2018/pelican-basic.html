@@ -119,7 +119,7 @@ Summary:    #文章列表只显示此信息
 
 
 <hr>
-<h3>安装virtualenv</h3>
+<h3 id="virtualenv">安装virtualenv</h3>
 <p><code>pip install virtualenv</code>  </p>
 <p>创建一个env环境  </p>
 <div class="highlight"><pre><span></span>打开命令行窗口
@@ -131,7 +131,7 @@ pip install pelican
 </pre></div>
 
 
-<h3>创建blog</h3>
+<h3 id="blog">创建blog</h3>
 <div class="highlight"><pre><span></span>mkdir blog
 cd blog
 pelican-quickstart
@@ -145,7 +145,7 @@ pelican-quickstart
 </pre></div>
 
 
-<h3>写文章</h3>
+<h3 id="_1">写文章</h3>
 <div class="highlight"><pre><span></span>在 content 目录新建一个 test.md文件, 填入一下内容:
 
 Title: 文章标题
@@ -157,16 +157,16 @@ Tag: 标签1, 标签2
 </pre></div>
 
 
-<h3>生成html</h3>
+<h3 id="html">生成html</h3>
 <p>使用命令：<code>pelican content</code></p>
-<h3>开启本地测试服务器</h3>
+<h3 id="_2">开启本地测试服务器</h3>
 <div class="highlight"><pre><span></span>cd ~/projects/yoursite/output
 python -m pelican.server
 </pre></div>
 
 
 <p><a href="http://127.0.0.1:8000/">本地测试web服务器</a></p>
-<h2>pelican主题</h2>
+<h2 id="pelican">pelican主题</h2>
 <div class="highlight"><pre><span></span>安装主题：
 pelican-themes --list
 pelican-themes -v -l    #查看已安装主题

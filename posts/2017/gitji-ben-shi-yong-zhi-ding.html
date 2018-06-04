@@ -109,13 +109,13 @@
   
 
   <div>
-    <h3>git基本使用</h3>
+    <h3 id="git">git基本使用</h3>
 <hr>
 <p><a href="https://git-scm.com/">git下载</a>
 <a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/00137583770360579bc4b458f044ce7afed3df579123eca000">搭建git服务器</a></p>
 <!--more-->
 
-<h5>git基本概念</h5>
+<h5 id="git_1">git基本概念</h5>
 <blockquote>
 <p>基本概念：git有工作区与暂存区的概念，工作区及创建git仓库的系统目录(就是你在电脑里能看到的目录)工作区有一个隐藏目录.git，这个不算工作区，而是Git的版本库。
 Git的版本库里存了很多东西，其中最重要的就是称为stage（或者叫index）的暂存区，还有Git为我们自动创建的第一个分支master，以及指向master的一个指针叫HEAD。</p>
@@ -129,7 +129,7 @@ Git的版本库里存了很多东西，其中最重要的就是称为stage（或
 另外，git commit 加上-a 选项，Git就会自动把所有已经跟踪过的文件暂存起来一并提交，从而跳过git add 步骤。</p>
 </blockquote>
 <hr>
-<h5>git样例</h5>
+<h5 id="git_2">git样例</h5>
 <ol>
 <li>
 <p>首先，选择一个合适的地方，创建一个空目录
@@ -172,7 +172,7 @@ git merge dev           --git merge命令用于合并指定分支到当前分支
 </li>
 </ol>
 <hr>
-<h5>git分支</h5>
+<h5 id="git_3">git分支</h5>
 <p>首先，我们创建dev分支，然后切换到dev分支：
 <code>git checkout -b dev</code>
 git checkout命令加上-b参数表示创建并切换，相当于以下两条命令：</p>
@@ -187,7 +187,7 @@ git stash list  --查看stash列表<br>
 Git把stash内容存在某个地方了，但是需要恢复一下，有两个办法：
 一是用git stash apply恢复，但是恢复后，stash内容并不删除，你需要用git stash drop来删除；另一种方式是用git stash pop，恢复的同时把stash内容也删了：</p>
 <hr>
-<h5>git关联github</h5>
+<h5 id="gitgithub">git关联github</h5>
 <ol>
 <li>创建ssh key，以便关联远程仓库
     <code>ssh-keygen -t rsa -C "youremail@example.com"</code></li>
@@ -208,12 +208,12 @@ Git把stash内容存在某个地方了，但是需要恢复一下，有两个办
 </li>
 </ol>
 <hr>
-<h5>git clone</h5>
+<h5 id="git-clone">git clone</h5>
 <p>git clone git@github.com:michaelliao/gitskills.git<br>
 - 实际上，Git支持多种协议，默认的git://使用ssh，但也可以使用https等其他协议。
 - 使用https除了速度慢以外，还有个最大的麻烦是每次推送都必须输入口令，但是在某些只开放http端口的公司内部就无法使用ssh协议而只能用https。  </p>
 <hr>
-<h5>标签管理</h5>
+<h5 id="_1">标签管理</h5>
 <p>在Git中打标签非常简单，首先，切换到需要打标签的分支上，然后，敲命令
 <code>git tag &lt;name&gt;</code>就可以打一个新标签,默认标签是打在最新提交的commit上的。 </p>
 <p>可以用<code>git show &lt;tagname&gt;</code>查看标签信息。
@@ -227,24 +227,24 @@ Git把stash内容存在某个地方了，但是需要恢复一下，有两个办
 命令<code>git tag -d &lt;tagname&gt;</code>可以删除一个本地标签；<br>
 命令<code>git push origin :refs/tags/&lt;tagname&gt;</code>可以删除一个远程标签。  </p>
 <hr>
-<h5>.gitignore的文件忽略设置</h5>
+<h5 id="gitignore">.gitignore的文件忽略设置</h5>
 <p>【例子】</p>
-<h5>忽略<em>.o和</em>.a文件</h5>
+<h5 id="oa">忽略<em>.o和</em>.a文件</h5>
 <p>*.[oa]</p>
-<h5>忽略<em>.b和</em>.B文件，my.b除外</h5>
+<h5 id="bbmyb">忽略<em>.b和</em>.B文件，my.b除外</h5>
 <p>*.[bB]
 !my.b</p>
-<h5>忽略dbg文件和dbg目录</h5>
+<h5 id="dbgdbg">忽略dbg文件和dbg目录</h5>
 <p>dbg</p>
-<h5>只忽略dbg目录，不忽略dbg文件</h5>
+<h5 id="dbgdbg_1">只忽略dbg目录，不忽略dbg文件</h5>
 <p>dbg/</p>
-<h5>只忽略dbg文件，不忽略dbg目录</h5>
+<h5 id="dbgdbg_2">只忽略dbg文件，不忽略dbg目录</h5>
 <p>dbg
 !dbg/</p>
-<h5>只忽略当前目录下的dbg文件和目录，子目录的dbg不在忽略范围内</h5>
+<h5 id="dbgdbg_3">只忽略当前目录下的dbg文件和目录，子目录的dbg不在忽略范围内</h5>
 <p>/dbg</p>
 <hr>
-<h5>git常用命令</h5>
+<h5 id="git_4">git常用命令</h5>
 <p>设置标识
 git config --global user.name "Your Name"
 git config --global user.email "email@example.com"</p>
@@ -278,8 +278,8 @@ git rm --cached</p>
 $ git checkout -- readme.txt</p>
 <p>列出master目录结构
 git ls-tree master</p>
-<h2><a href="http://www.liaoxuefeng.com/">git教程</a></h2>
-<h5>git服务器搭建</h5>
+<h2 id="git_5"><a href="http://www.liaoxuefeng.com/">git教程</a></h2>
+<h5 id="git_6">git服务器搭建</h5>
 <ol>
 <li>安装git<code>yum install git</code></li>
 <li>创建用户<code>useradd sopuy</code>  </li>
