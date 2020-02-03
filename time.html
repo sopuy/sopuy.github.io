@@ -1,7 +1,33 @@
-<a href="https://time.is/Beijing" id="time_is_link" rel="nofollow" style="font-size:36px;background:绿">北京时间:</a>
-<span id="Beijing_z43d" style="font-size:36px;background:绿"></span>
+UTC时间: <span id="UTC_za00"></span><br/>
+<br/>
+北京时间: <span id="Beijing_z43d"></span><br/>
+<br/>
+洛杉矶时间: <span id="Los_Angeles_z14e"></span><br/>
+<br/>
+纽约时间: <span id="New_York_z161"></span><br/>
+<br/>
+东京时间: <span id="Tokyo_z444"></span><br/>
+<br/>
+曼谷时间: <span id="Bangkok_z40a"></span><br/>
+<br/>
+中国时间: <span id="Shanghai_z43d"></span><br/>
+<br/>
+Find the <a href="https://time.is/" id="time_is_link" rel="nofollow">current time for any location or time zone on Time.is!</a>
+
 <script src="//widget.time.is/zh.js"></script>
 <script>
-time_is_widget.init({Beijing_z43d:{template:"TIME<br>DATE<br>SUN", date_format:"year年monthnamednum日dayname，第week周", sun_format:"日出: srhour:srminute 日落: sshour:ssminute", coords:"39.9075000,116.3972300"}});
+time_is_widget.init({
+	UTC_za00 : {},
+    Beijing_z43d : {},
+    Los_Angeles_z14e :{},
+	New_York_z161 : {},
+	Tokyo_z444 : {},
+    Bangkok_z40a : {},
+    Shanghai_z43d :{
+		template:"TIME<br>DATE<br data-tomark-pass>SUN", 
+        date_format:"year年monthnamednum日dayname，第week周", 
+        sun_format:"日出: srhour:srminute 日落: sshour:ssminute",
+        coords:"39.9075000,116.3972300"
+    }
+	});
 </script>
-
