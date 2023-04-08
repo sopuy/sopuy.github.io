@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Markdown Basic - sopuy&#39;s Blog</title><meta name="Description" content="markdown 基础语法"><meta property="og:title" content="Markdown Basic" />
+<meta property="og:description" content="markdown 基础语法" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://sopuy.com/posts/markdown-basic/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-04-08T13:58:35+08:00" />
+<meta property="article:modified_time" content="2023-04-08T13:58:35+08:00" /><meta property="og:site_name" content="sopuy&#39;s Blog" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Markdown Basic"/>
+<meta name="twitter:description" content="markdown 基础语法"/>
+<meta name="application-name" content="sopuy&#39;s blog">
+<meta name="apple-mobile-web-app-title" content="sopuy&#39;s blog"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://sopuy.com/posts/markdown-basic/" /><link rel="prev" href="http://sopuy.com/posts/linux-date-basic/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Markdown Basic",
+        "inLanguage": "en-us",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/sopuy.com\/posts\/markdown-basic\/"
+        },"genre": "posts","wordcount":  62 ,
+        "url": "http:\/\/sopuy.com\/posts\/markdown-basic\/","datePublished": "2023-04-08T13:58:35+08:00","dateModified": "2023-04-08T13:58:35+08:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "sunhn"
+            },"description": "markdown 基础语法"
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="sopuy&#39;s Blog">sopuy&#39;s Blog</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/" title="Home"> Home </a><a class="menu-item" href="/posts/" title="posts"> All posts </a><a class="menu-item" href="/tags/" title="tags"> Tags </a><a class="menu-item" href="/categories/" title="categories"> Categories </a><a class="menu-item" href="/about/" title="about"> About </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="sopuy&#39;s Blog">sopuy&#39;s Blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/" title="Home">Home</a><a class="menu-item" href="/posts/" title="posts">All posts</a><a class="menu-item" href="/tags/" title="tags">Tags</a><a class="menu-item" href="/categories/" title="categories">Categories</a><a class="menu-item" href="/about/" title="about">About</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Markdown Basic</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="http://sopuy.com" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>sunhn</a></span>&nbsp;<span class="post-category">included in <a href="/categories/notes/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>notes</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-04-08">2023-04-08</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;62 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;One minute&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#markdown常用语法">markdown常用语法</a>
+      <ul>
+        <li><a href="#标题">标题</a></li>
+        <li><a href="#强调">强调</a></li>
+        <li><a href="#换行">换行</a></li>
+        <li><a href="#列表">列表</a></li>
+        <li><a href="#引用">引用</a></li>
+        <li><a href="#链接与图片">链接与图片</a></li>
+        <li><a href="#代码块">代码块</a></li>
+        <li><a href="#水平线">水平线</a></li>
+        <li><a href="#待办事项">待办事项</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h2 id="markdown常用语法">markdown常用语法</h2>
+<h3 id="标题">标题</h3>
+<p>以符号<code>#</code>标记，一个代表一级标题，共有六级标题</p>
+<pre tabindex="0"><code># 这是 H1
+## 这是 H2
+###### 这是 H6
+</code></pre><hr>
+<h3 id="强调">强调</h3>
+<p>斜体：文字两端使用1对<code>*</code>或<code>-</code>标记起来
+粗体：文字两端使用2对<code>*</code>或<code>-</code>标记起来
+删除线：使用2对<code>~</code>包裹起来的行，标记为删除线</p>
+<pre tabindex="0"><code>*我是斜体*
+**我是粗体**
+~~我是删除线~~  
+</code></pre><hr>
+<h3 id="换行">换行</h3>
+<p>在行尾添加两个空格加回车表示换行</p>
+<hr>
+<h3 id="列表">列表</h3>
+<p>以符号<code>-</code>、<code>+</code>或<code>*</code>标记为无序列表，有序列表则直接在文字前加<code>1. 2. 3.</code>即可</p>
+<pre tabindex="0"><code>- list1
++ list2
+* list3
+
+1. list4
+2. list5
+</code></pre><hr>
+<h3 id="引用">引用</h3>
+<p>只需要在文本前加入 <code>&gt;</code> 这种尖括号（大于号）即可，区块引用可以嵌套</p>
+<pre tabindex="0"><code>&gt; 我是引用
+&gt;&gt; 我是引用的引用  
+</code></pre><hr>
+<h3 id="链接与图片">链接与图片</h3>
+<p>链接以符号<code>[]()</code>标识，图片与链接的语法很像，区别为在最前面添加了一个<code>!</code></p>
+<pre tabindex="0"><code>链接: [百度](https://www.baidu.com)
+图片: ![github图片](https://assets-cdn.github.com/favicon.ico)  
+</code></pre><hr>
+<h3 id="代码块">代码块</h3>
+<p>只需要有3对```(数字1左边的按键)把代码块包裹起来就可以了</p>
+<pre tabindex="0"><code>我是代码块
+我是代码块
+</code></pre><p>[^备注]：使用1对`表示行内代码</p>
+<hr>
+<h3 id="水平线">水平线</h3>
+<p>使用三个<code>-</code>或<code>*</code>标记为水平线</p>
+<hr>
+<h3 id="待办事项">待办事项</h3>
+<p>使用<code>- []</code>(未完成)<code>- [x]</code>(已完成)</p>
+<ul>
+<li><i class="far fa-square fa-fw" aria-hidden="true"></i> 未完成待办事项</li>
+<li><i class="far fa-check-square fa-fw" aria-hidden="true"></i> 已完成待办事项</li>
+</ul></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2023-04-08</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/linux-date-basic/" class="prev" rel="prev" title="linux date basic"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>linux date basic</a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+    <div class="footer-container"><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2018 - 2023</span>&nbsp;|&nbsp;<span class="license"><a href='https://creativecommons.org/licenses/by-nc-nd/4.0/deed.en'> [CC BY-NC-ND 4.0] </a></span><span class="license"> | Powered by <a rel="license" href="https://gohugo.io">[Hugo]</a></span><br />
+        </div>
+
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+        <span id="busuanzi_container_site_pv">Total:&nbsp;<span id="busuanzi_value_site_pv"></span>&nbsp;pv,</span>
+        <span id="busuanzi_container_site_uv">&nbsp;<span id="busuanzi_value_site_uv"></span>&nbsp;uv</span>
+        <span id="span_dt_dt"> </span>
+        <script language="javascript">
+            function show_date_time() {
+                window.setTimeout("show_date_time()", 1000);
+                BirthDay = new Date("2023-04-06 00:00:00");
+                today = new Date();
+                timeold = (today.getTime() - BirthDay.getTime());
+                sectimeold = timeold / 1000
+                secondsold = Math.floor(sectimeold);
+                msPerDay = 24 * 60 * 60 * 1000
+                e_daysold = timeold / msPerDay
+                daysold = Math.floor(e_daysold);
+                e_hrsold = (e_daysold - daysold) * 24;
+                hrsold = Math.floor(e_hrsold).toString().padStart(2, '0');
+                e_minsold = (e_hrsold - hrsold) * 60;
+                minsold = Math.floor((e_hrsold - hrsold) * 60).toString().padStart(2, '0');
+                seconds = Math.floor((e_minsold - minsold) * 60).toString().padStart(2, '0');
+                span_dt_dt.innerHTML = " | This site up " + daysold + " days, " + hrsold + ":" + minsold + ":" + seconds;
+            }
+            show_date_time();
+        </script>
+    </div>
+</footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{},"search":{"highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>
