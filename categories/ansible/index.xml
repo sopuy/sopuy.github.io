@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>ansible - Category - sopuy&#39;s Blog</title>
+        <link>http://sopuy.com/categories/ansible/</link>
+        <description>ansible - Category - sopuy&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>sopuy@outlook.com (sopuy)</managingEditor>
+            <webMaster>sopuy@outlook.com (sopuy)</webMaster><lastBuildDate>Thu, 13 Apr 2023 20:22:33 &#43;0800</lastBuildDate><atom:link href="http://sopuy.com/categories/ansible/" rel="self" type="application/rss+xml" /><item>
+    <title>ansible vars</title>
+    <link>http://sopuy.com/posts/ansible-vars/</link>
+    <pubDate>Thu, 13 Apr 2023 20:22:33 &#43;0800</pubDate>
+    <author>大宁</author>
+    <guid>http://sopuy.com/posts/ansible-vars/</guid>
+    <description><![CDATA[ansible 变量使用手册]]></description>
+</item>
+</channel>
+</rss>

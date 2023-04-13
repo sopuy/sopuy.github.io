@@ -2,16 +2,17 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>http://sopuy.com/categories/</loc><lastmod>2023-04-10T10:16:21&#43;08:00</lastmod></url><url>
+            <loc>http://sopuy.com/tags/ansible/</loc><lastmod>2023-04-13T20:22:33&#43;08:00</lastmod></url><url>
+            <loc>http://sopuy.com/categories/ansible/</loc><lastmod>2023-04-13T20:22:33&#43;08:00</lastmod></url><url>
+            <loc>http://sopuy.com/posts/ansible-vars/</loc><lastmod>2023-04-13T20:22:33&#43;08:00</lastmod></url><url>
+            <loc>http://sopuy.com/categories/</loc><lastmod>2023-04-13T20:22:33&#43;08:00</lastmod></url><url>
+            <loc>http://sopuy.com/posts/</loc><lastmod>2023-04-13T20:22:33&#43;08:00</lastmod></url><url>
+            <loc>http://sopuy.com/</loc><lastmod>2023-04-13T20:22:33&#43;08:00</lastmod></url><url>
+            <loc>http://sopuy.com/tags/</loc><lastmod>2023-04-13T20:22:33&#43;08:00</lastmod></url><url>
             <loc>http://sopuy.com/categories/linux/</loc><lastmod>2023-04-10T10:16:21&#43;08:00</lastmod></url><url>
             <loc>http://sopuy.com/posts/linux-facl/</loc><lastmod>2023-04-10T10:16:21&#43;08:00</lastmod></url><url>
-            <loc>http://sopuy.com/posts/</loc><lastmod>2023-04-10T10:16:21&#43;08:00</lastmod></url><url>
-            <loc>http://sopuy.com/</loc><lastmod>2023-04-10T10:16:21&#43;08:00</lastmod></url><url>
-            <loc>http://sopuy.com/public/posts/linux-facl/</loc><lastmod>2023-04-10T10:15:31&#43;08:00</lastmod></url><url>
-            <loc>http://sopuy.com/public/</loc><lastmod>2023-04-10T10:15:31&#43;08:00</lastmod></url><url>
             <loc>http://sopuy.com/posts/markdown-basic/</loc><lastmod>2023-04-08T13:58:35&#43;08:00</lastmod></url><url>
             <loc>http://sopuy.com/categories/notes/</loc><lastmod>2023-04-08T13:58:35&#43;08:00</lastmod></url><url>
             <loc>http://sopuy.com/tags/bash/</loc><lastmod>2023-04-07T13:41:05&#43;08:00</lastmod></url><url>
             <loc>http://sopuy.com/posts/linux-date-basic/</loc><lastmod>2023-04-07T13:41:05&#43;08:00</lastmod></url><url>
-            <loc>http://sopuy.com/tags/</loc><lastmod>2023-04-07T13:41:05&#43;08:00</lastmod></url><url>
             <loc>http://sopuy.com/about/</loc><lastmod>2023-03-16T14:35:12&#43;08:00</lastmod></url></urlset>

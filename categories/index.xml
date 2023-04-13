@@ -4,7 +4,15 @@
         <link>http://sopuy.com/categories/</link>
         <description>Categories - Category - sopuy&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>sopuy@outlook.com (sopuy)</managingEditor>
-            <webMaster>sopuy@outlook.com (sopuy)</webMaster><lastBuildDate>Mon, 10 Apr 2023 10:16:21 &#43;0800</lastBuildDate><atom:link href="http://sopuy.com/categories/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>sopuy@outlook.com (sopuy)</webMaster><lastBuildDate>Thu, 13 Apr 2023 20:22:33 &#43;0800</lastBuildDate><atom:link href="http://sopuy.com/categories/" rel="self" type="application/rss+xml" /><item>
+    <title>ansible</title>
+    <link>http://sopuy.com/categories/ansible/</link>
+    <pubDate>Thu, 13 Apr 2023 20:22:33 &#43;0800</pubDate>
+    <author>sopuy</author>
+    <guid>http://sopuy.com/categories/ansible/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
     <title>linux</title>
     <link>http://sopuy.com/categories/linux/</link>
     <pubDate>Mon, 10 Apr 2023 10:16:21 &#43;0800</pubDate>
