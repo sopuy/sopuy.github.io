@@ -4,36 +4,36 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
-        <title>Linux Facl - sopuy&#39;s weblog</title><meta name="Description" content="Linux facl 文件访问控制列表使用手册"><meta property="og:title" content="Linux Facl" />
-<meta property="og:description" content="Linux facl 文件访问控制列表使用手册" />
+        <title>Big Moment - sopuy&#39;s weblog</title><meta name="Description" content="sopuy&#39;s weblog, devops, linux, python, go, prometheus, telegraf, zabbix, ansible"><meta property="og:title" content="Big Moment" />
+<meta property="og:description" content="" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://sopuy.com/posts/linux-facl/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2023-04-10T10:16:21+08:00" />
-<meta property="article:modified_time" content="2023-04-10T10:16:21+08:00" /><meta property="og:site_name" content="sopuy&#39;s weblog" />
+<meta property="og:url" content="http://sopuy.com/posts/big-moment/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-09-15T14:17:33+08:00" />
+<meta property="article:modified_time" content="2023-09-15T14:17:33+08:00" /><meta property="og:site_name" content="sopuy&#39;s weblog" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Linux Facl"/>
-<meta name="twitter:description" content="Linux facl 文件访问控制列表使用手册"/>
+<meta name="twitter:title" content="Big Moment"/>
+<meta name="twitter:description" content=""/>
 <meta name="application-name" content="sopuy&#39;s weblog">
 <meta name="apple-mobile-web-app-title" content="sopuy&#39;s weblog"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://sopuy.com/posts/linux-facl/" /><link rel="prev" href="http://sopuy.com/posts/markdown-basic/" /><link rel="next" href="http://sopuy.com/posts/ansible-vars/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://sopuy.com/posts/big-moment/" /><link rel="prev" href="http://sopuy.com/posts/ansible-vars/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
-        "headline": "Linux Facl",
+        "headline": "Big Moment",
         "inLanguage": "en-us",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "http:\/\/sopuy.com\/posts\/linux-facl\/"
-        },"genre": "posts","wordcount":  218 ,
-        "url": "http:\/\/sopuy.com\/posts\/linux-facl\/","datePublished": "2023-04-10T10:16:21+08:00","dateModified": "2023-04-10T10:16:21+08:00","publisher": {
+            "@id": "http:\/\/sopuy.com\/posts\/big-moment\/"
+        },"genre": "posts","wordcount":  2 ,
+        "url": "http:\/\/sopuy.com\/posts\/big-moment\/","datePublished": "2023-09-15T14:17:33+08:00","dateModified": "2023-09-15T14:17:33+08:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
                 "@type": "Person",
                 "name": "Daning"
-            },"description": "Linux facl 文件访问控制列表使用手册"
+            },"description": ""
     }
     </script></head>
     <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
@@ -99,10 +99,10 @@
                 <div class="container"><div class="toc" id="toc-auto">
             <h2 class="toc-title">Contents</h2>
             <div class="toc-content" id="toc-content-auto"></div>
-        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Linux Facl</h1><div class="post-meta">
-            <div class="post-meta-line"><span class="post-author"><a href="http://sopuy.com" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Daning</a></span>&nbsp;<span class="post-category">included in <a href="/categories/linux/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>linux</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-04-10">2023-04-10</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;218 words&nbsp;
-                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;2 minutes&nbsp;</div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Big Moment</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="http://sopuy.com" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Daning</a></span>&nbsp;<span class="post-category">included in <a href="/categories/personal/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Personal</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-09-15">2023-09-15</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;2 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;One minute&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="">
                 <div class="details-summary toc-title">
                     <span>Contents</span>
@@ -110,155 +110,36 @@
                 </div>
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
-    <li><a href="#facl-文件访问控制列表">facl 文件访问控制列表</a>
-      <ul>
-        <li><a href="#一些说明">一些说明</a></li>
-      </ul>
-    </li>
-    <li><a href="#背景">背景</a></li>
-    <li><a href="#linux-文件访问权限匹配模型">linux 文件访问权限匹配模型</a>
-      <ul>
-        <li><a href="#基本权限匹配机制">基本权限匹配机制</a></li>
-        <li><a href="#facl-权限匹配机制">facl 权限匹配机制</a></li>
-      </ul>
-    </li>
-    <li><a href="#常用命令">常用命令</a>
-      <ul>
-        <li><a href="#getfacl">getfacl</a></li>
-        <li><a href="#setfacl">setfacl</a></li>
-      </ul>
-    </li>
+    <li><a href="#big-moment">Big moment</a></li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><h2 id="facl-文件访问控制列表">facl 文件访问控制列表</h2>
-<ul>
-<li>File Access ConTrol List</li>
-</ul>
-<h3 id="一些说明">一些说明</h3>
-<ul>
-<li>默认只对用户做 facl 权限，对组的权限设置，一般是通过用户附属组的方式实现；</li>
-<li>查看是否启用了 facl：如果使用命令 <code>ls -l</code> 会发现在9位权限位之后，又增加了一个 <code>+</code> 号，则证明启用了 facl</li>
-</ul>
-<h2 id="背景">背景</h2>
-<ul>
-<li>按照 linux 基本权限机制（u,g,o 权限），一个文件如果想被属主之外的其他用户访问，只能修改文件的 o(ther) 权限来实现（或者将用户加入属组中）。这两种方式都会导致文件权限被授予的过大，数据的安全性大大降低。facl 的出现很好的解决了这个问题。facl (文件访问控制列表)是一种额外的文件赋权机制，它在文件的基本权限u,g,o外，添加了另一层让普通用户能够将文件的控制权限赋予另外的一些用户或者组的机制。</li>
-</ul>
-<h2 id="linux-文件访问权限匹配模型">linux 文件访问权限匹配模型</h2>
-<h3 id="基本权限匹配机制">基本权限匹配机制</h3>
-<ol>
-<li>检查进程的发起者和被访问文件的属主是否相同</li>
-</ol>
-<ul>
-<li>如果相 同，则使用文件属主的权限访问</li>
-<li>如果不同，转到步骤2</li>
-</ul>
-<ol start="2">
-<li>检查进程的发起者和被访问文件的属组是否相同</li>
-</ol>
-<ul>
-<li>如果相同，则使用文件属组的权限访问</li>
-<li>如果不同，转到步骤3</li>
-</ul>
-<ol start="3">
-<li>使用other权限</li>
-</ol>
-<h3 id="facl-权限匹配机制">facl 权限匹配机制</h3>
-<ol>
-<li>检查进程的发起者和被访问文件的属主是否相同</li>
-</ol>
-<ul>
-<li>如果相同，则使用文件属主的权限访问</li>
-<li>如果不同，转到步骤2</li>
-</ul>
-<ol start="2">
-<li>检查被访问的文件是否有关于进程发起者这个特定用户的facl</li>
-</ol>
-<ul>
-<li>如果有，则使用facl中这个特定用户的facl权限访问</li>
-<li>如果没有，转到步骤3</li>
-</ul>
-<ol start="3">
-<li>检查进程的发起者和被访问文件的属组是否相同</li>
-</ol>
-<ul>
-<li>如果相同，则使用文件属组的权限访问</li>
-<li>如果不同，转到步骤4</li>
-</ul>
-<ol start="4">
-<li>检查被访问的文件是否有关于进程发起者这个特定用户的所属组的facl</li>
-</ol>
-<ul>
-<li>如果有，则使用facl中这个特定用户的所属组的facl权限访问</li>
-<li>如果没有，转到步骤5</li>
-</ul>
-<ol start="5">
-<li>使用other权限</li>
-</ol>
-<h2 id="常用命令">常用命令</h2>
-<ul>
-<li>设置命令 <code>setfacl</code></li>
-<li>查看命令 <code>getfacl</code></li>
-</ul>
-<h3 id="getfacl">getfacl</h3>
-<ul>
-<li>查看 <code>1.txt</code> 的文件权限：</li>
-</ul>
-<pre tabindex="0"><code>$ getfacl 1.txt
-
-# file: 1.txt
-# owner: ubuntu
-# group: ubuntu
-user::rw-
-group::rw-
-other::r--
-
-file: 1.txt    # 文件名
-owner:ubuntu   # 文件属主
-group:ubuntu   # 文件属组
-user::rw-      # 用户的访问权限（中间字段为用户名，当中间字段为空时，则代表属主；多个用户会存在多行）
-group::rw-     # 组的访问权限（中间字段为组名，当中间字段为空时，则代表属组；多个组会存在多行）
-other::r--     # 其他的访问权限
-</code></pre><h3 id="setfacl">setfacl</h3>
-<h4 id="参数说明">参数说明</h4>
-<pre tabindex="0"><code>setfacl [-bkndRLPvh] [{-m|-x} acl_spec] [{-M|-X} acl_file] file ...
-
-setfacl参数如下: -m 和 -x 最使用
--m ：设置后续的acl参数
--x ：删除后续的acl参数
--b ：删除所有的ACL设定参数
--R ：递归设置acl参数
--d ：设置预设的acl参数(只对目录有效，在该目录新建的文件也会使用此ACL默认值)
--k ：删除预设的ACL参数
-
-EXAMPLES:
-       Granting an additional user read access
-              setfacl -m u:lisa:r file
-
-       Revoking write access from all groups and all named users (using the effective rights mask)
-              setfacl -m m::rx file
-
-       Removing a named group entry from a file&#39;s ACL
-              setfacl -x g:staff file
-
-       Copying the ACL of one file to another
-              getfacl file1 | setfacl --set-file=- file2
-
-       Copying the access ACL into the Default ACL
-              getfacl --access dir | setfacl -d -M- dir
-</code></pre><h4 id="使用实例">使用实例</h4>
-<ul>
-<li>文件 <code>/opt/123.txt</code> 的属主是 ubuntu，文件权限为 755；需求：允许属于组 test 的 test 用户可以读写改文件：</li>
-</ul>
-<pre tabindex="0"><code>setfacl -m u:test:rw /opt/123.txt 
-</code></pre><ul>
-<li>删除文件 <code>/opt/123.txt</code> 的 facl 权限：</li>
-</ul>
-<pre tabindex="0"><code>setfacl -b /opt/123.txt
-</code></pre></div><div class="post-footer" id="post-footer">
+            </div><div class="content" id="content"><h2 id="big-moment">Big moment</h2>
+<div>
+<span id="span_dt01"> </span>
+<p><span id="span_dt02"> </span></p>
+<script language="javascript">
+    function yearsAndDaysBetween(date1, name) {
+      // 将两个日期都转换为毫秒数
+      const time1 = new Date(date1).getTime();
+      let date2 = new Date();
+      const time2 = new Date(date2).getTime();
+      // 计算两个日期之间的毫秒数差
+      const diff = time2 - time1;
+      // 计算两个日期之间的年数
+      const years = Math.floor(diff / (1000 * 60 * 60 * 24 * 365.25));
+      // 计算两个日期之间的天数
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24)) - years * 365.25;
+      // 返回两个日期之间的年数和天数
+      return name + " : " + years + " years " + days + " days.";
+    }
+    document.getElementById("span_dt01").innerHTML = yearsAndDaysBetween("2023-07-24","Mia moment");
+    document.getElementById("span_dt02").innerHTML = yearsAndDaysBetween("2018-10-21","My moment");
+</script>
+</div></div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>Updated on 2023-04-10</span>
+                <span>Updated on 2023-09-15</span>
             </div></div>
         <div class="post-info-line">
             <div class="post-info-md"></div>
@@ -275,8 +156,7 @@ EXAMPLES:
         </section>
     </div>
 
-    <div class="post-nav"><a href="/posts/markdown-basic/" class="prev" rel="prev" title="Markdown Basic"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Markdown Basic</a>
-            <a href="/posts/ansible-vars/" class="next" rel="next" title="ansible vars">ansible vars<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+    <div class="post-nav"><a href="/posts/ansible-vars/" class="prev" rel="prev" title="ansible vars"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>ansible vars</a></div>
 </div>
 </article></div>
             </main><footer class="footer">

@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "style.min.css",
-	"sourceRoot": "/Users/sopuy/Library/Mobile Documents/iCloud~md~obsidian/Documents/wiki/500-resource/blog",
+	"sourceRoot": "/Users/daning/Documents/repositories/blog",
 	"sources": [
 		"themes/LoveIt/assets/css/style.scss",
 		"themes/LoveIt/assets/lib/normalize/normalize.css",
