@@ -2,17 +2,18 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
+            <loc>http://sopuy.com/tags/2fa/</loc><lastmod>2023-09-19T15:40:05&#43;08:00</lastmod></url><url>
+            <loc>http://sopuy.com/categories/</loc><lastmod>2023-09-19T15:40:05&#43;08:00</lastmod></url><url>
+            <loc>http://sopuy.com/categories/linux/</loc><lastmod>2023-09-19T15:40:05&#43;08:00</lastmod></url><url>
             <loc>http://sopuy.com/posts/linux-ssh-sudo-2fa/</loc><lastmod>2023-09-19T15:40:05&#43;08:00</lastmod></url><url>
             <loc>http://sopuy.com/posts/</loc><lastmod>2023-09-19T15:40:05&#43;08:00</lastmod></url><url>
             <loc>http://sopuy.com/</loc><lastmod>2023-09-19T15:40:05&#43;08:00</lastmod></url><url>
+            <loc>http://sopuy.com/tags/</loc><lastmod>2023-09-19T15:40:05&#43;08:00</lastmod></url><url>
             <loc>http://sopuy.com/posts/big-moment/</loc><lastmod>2023-09-15T14:17:33&#43;08:00</lastmod></url><url>
-            <loc>http://sopuy.com/categories/</loc><lastmod>2023-09-15T14:17:33&#43;08:00</lastmod></url><url>
             <loc>http://sopuy.com/categories/personal/</loc><lastmod>2023-09-15T14:17:33&#43;08:00</lastmod></url><url>
             <loc>http://sopuy.com/tags/ansible/</loc><lastmod>2023-04-13T20:22:33&#43;08:00</lastmod></url><url>
             <loc>http://sopuy.com/categories/ansible/</loc><lastmod>2023-04-13T20:22:33&#43;08:00</lastmod></url><url>
             <loc>http://sopuy.com/posts/ansible-vars/</loc><lastmod>2023-04-13T20:22:33&#43;08:00</lastmod></url><url>
-            <loc>http://sopuy.com/tags/</loc><lastmod>2023-04-13T20:22:33&#43;08:00</lastmod></url><url>
-            <loc>http://sopuy.com/categories/linux/</loc><lastmod>2023-04-10T10:16:21&#43;08:00</lastmod></url><url>
             <loc>http://sopuy.com/posts/linux-facl/</loc><lastmod>2023-04-10T10:16:21&#43;08:00</lastmod></url><url>
             <loc>http://sopuy.com/posts/markdown-basic/</loc><lastmod>2023-04-08T13:58:35&#43;08:00</lastmod></url><url>
             <loc>http://sopuy.com/categories/notes/</loc><lastmod>2023-04-08T13:58:35&#43;08:00</lastmod></url><url>
