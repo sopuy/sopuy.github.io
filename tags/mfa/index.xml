@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>mfa - Tag - sopuy&#39;s weblog</title>
+        <link>http://sopuy.com/tags/mfa/</link>
+        <description>mfa - Tag - sopuy&#39;s weblog</description>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>sopuy@outlook.com (sopuy)</managingEditor>
+            <webMaster>sopuy@outlook.com (sopuy)</webMaster><lastBuildDate>Tue, 19 Sep 2023 15:40:05 &#43;0800</lastBuildDate><atom:link href="http://sopuy.com/tags/mfa/" rel="self" type="application/rss+xml" /><item>
+    <title>linux ssh&#43;sudo enable 2fa</title>
+    <link>http://sopuy.com/posts/linux-ssh-sudo-2fa/</link>
+    <pubDate>Tue, 19 Sep 2023 15:40:05 &#43;0800</pubDate>
+    <author>Daning</author>
+    <guid>http://sopuy.com/posts/linux-ssh-sudo-2fa/</guid>
+    <description><![CDATA[]]></description>
+</item>
+</channel>
+</rss>
