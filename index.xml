@@ -1,57 +1,57 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>sopuy&#39;s weblog</title>
-        <link>http://sopuy.com/</link>
+        <link>http://blog.sopuy.com/</link>
         <description>sopuy&#39;s weblog, devops, linux, python, go, prometheus, telegraf, zabbix, ansible</description>
         <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>sopuy@outlook.com (sopuy)</managingEditor>
             <webMaster>sopuy@outlook.com (sopuy)</webMaster><lastBuildDate>Tue, 19 Sep 2023 15:40:05 &#43;0800</lastBuildDate>
-            <atom:link href="http://sopuy.com/index.xml" rel="self" type="application/rss+xml" />
+            <atom:link href="http://blog.sopuy.com/index.xml" rel="self" type="application/rss+xml" />
         <item>
     <title>linux ssh&#43;sudo enable 2fa</title>
-    <link>http://sopuy.com/posts/linux-ssh-sudo-2fa/</link>
+    <link>http://blog.sopuy.com/posts/linux-ssh-sudo-2fa/</link>
     <pubDate>Tue, 19 Sep 2023 15:40:05 &#43;0800</pubDate>
     <author>Daning</author>
-    <guid>http://sopuy.com/posts/linux-ssh-sudo-2fa/</guid>
+    <guid>http://blog.sopuy.com/posts/linux-ssh-sudo-2fa/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
     <title>Big moment</title>
-    <link>http://sopuy.com/posts/big-moment/</link>
+    <link>http://blog.sopuy.com/posts/big-moment/</link>
     <pubDate>Fri, 15 Sep 2023 14:17:33 &#43;0800</pubDate>
     <author>Daning</author>
-    <guid>http://sopuy.com/posts/big-moment/</guid>
+    <guid>http://blog.sopuy.com/posts/big-moment/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
     <title>ansible vars</title>
-    <link>http://sopuy.com/posts/ansible-vars/</link>
+    <link>http://blog.sopuy.com/posts/ansible-vars/</link>
     <pubDate>Thu, 13 Apr 2023 20:22:33 &#43;0800</pubDate>
     <author>Daning</author>
-    <guid>http://sopuy.com/posts/ansible-vars/</guid>
+    <guid>http://blog.sopuy.com/posts/ansible-vars/</guid>
     <description><![CDATA[ansible 变量使用手册]]></description>
 </item>
 <item>
     <title>Linux Facl</title>
-    <link>http://sopuy.com/posts/linux-facl/</link>
+    <link>http://blog.sopuy.com/posts/linux-facl/</link>
     <pubDate>Mon, 10 Apr 2023 10:16:21 &#43;0800</pubDate>
     <author>Daning</author>
-    <guid>http://sopuy.com/posts/linux-facl/</guid>
+    <guid>http://blog.sopuy.com/posts/linux-facl/</guid>
     <description><![CDATA[Linux facl 文件访问控制列表使用手册]]></description>
 </item>
 <item>
     <title>Markdown Basic</title>
-    <link>http://sopuy.com/posts/markdown-basic/</link>
+    <link>http://blog.sopuy.com/posts/markdown-basic/</link>
     <pubDate>Sat, 08 Apr 2023 13:58:35 &#43;0800</pubDate>
     <author>Daning</author>
-    <guid>http://sopuy.com/posts/markdown-basic/</guid>
+    <guid>http://blog.sopuy.com/posts/markdown-basic/</guid>
     <description><![CDATA[markdown 基础语法]]></description>
 </item>
 <item>
     <title>linux date basic</title>
-    <link>http://sopuy.com/posts/linux-date-basic/</link>
+    <link>http://blog.sopuy.com/posts/linux-date-basic/</link>
     <pubDate>Fri, 07 Apr 2023 13:41:05 &#43;0800</pubDate>
     <author>Daning</author>
-    <guid>http://sopuy.com/posts/linux-date-basic/</guid>
+    <guid>http://blog.sopuy.com/posts/linux-date-basic/</guid>
     <description><![CDATA[linux date 命令速查手册]]></description>
 </item>
 </channel>
