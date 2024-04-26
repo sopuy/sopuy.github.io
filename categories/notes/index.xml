@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>notes - Category - sopuy&#39;s weblog</title>
-        <link>http://blog.sopuy.com/categories/notes/</link>
+        <link>https://blog.sopuy.com/categories/notes/</link>
         <description>notes - Category - sopuy&#39;s weblog</description>
         <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>sopuy@outlook.com (sopuy)</managingEditor>
-            <webMaster>sopuy@outlook.com (sopuy)</webMaster><lastBuildDate>Sat, 08 Apr 2023 13:58:35 &#43;0800</lastBuildDate><atom:link href="http://blog.sopuy.com/categories/notes/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>sopuy@outlook.com (sopuy)</webMaster><lastBuildDate>Sat, 08 Apr 2023 13:58:35 &#43;0800</lastBuildDate><atom:link href="https://blog.sopuy.com/categories/notes/" rel="self" type="application/rss+xml" /><item>
     <title>Markdown Basic</title>
-    <link>http://blog.sopuy.com/posts/markdown-basic/</link>
+    <link>https://blog.sopuy.com/posts/markdown-basic/</link>
     <pubDate>Sat, 08 Apr 2023 13:58:35 &#43;0800</pubDate>
     <author>Daning</author>
-    <guid>http://blog.sopuy.com/posts/markdown-basic/</guid>
+    <guid>https://blog.sopuy.com/posts/markdown-basic/</guid>
     <description><![CDATA[markdown 基础语法]]></description>
 </item>
 </channel>

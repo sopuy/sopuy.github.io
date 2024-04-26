@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Personal - Category - sopuy&#39;s weblog</title>
-        <link>http://blog.sopuy.com/categories/personal/</link>
+        <link>https://blog.sopuy.com/categories/personal/</link>
         <description>Personal - Category - sopuy&#39;s weblog</description>
         <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>sopuy@outlook.com (sopuy)</managingEditor>
-            <webMaster>sopuy@outlook.com (sopuy)</webMaster><lastBuildDate>Fri, 15 Sep 2023 14:17:33 &#43;0800</lastBuildDate><atom:link href="http://blog.sopuy.com/categories/personal/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>sopuy@outlook.com (sopuy)</webMaster><lastBuildDate>Fri, 15 Sep 2023 14:17:33 &#43;0800</lastBuildDate><atom:link href="https://blog.sopuy.com/categories/personal/" rel="self" type="application/rss+xml" /><item>
     <title>Big moment</title>
-    <link>http://blog.sopuy.com/posts/big-moment/</link>
+    <link>https://blog.sopuy.com/posts/big-moment/</link>
     <pubDate>Fri, 15 Sep 2023 14:17:33 &#43;0800</pubDate>
     <author>Daning</author>
-    <guid>http://blog.sopuy.com/posts/big-moment/</guid>
+    <guid>https://blog.sopuy.com/posts/big-moment/</guid>
     <description><![CDATA[]]></description>
 </item>
 </channel>

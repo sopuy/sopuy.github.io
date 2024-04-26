@@ -1,31 +1,31 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Tags - Tag - sopuy&#39;s weblog</title>
-        <link>http://blog.sopuy.com/tags/</link>
+        <link>https://blog.sopuy.com/tags/</link>
         <description>Tags - Tag - sopuy&#39;s weblog</description>
         <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>sopuy@outlook.com (sopuy)</managingEditor>
-            <webMaster>sopuy@outlook.com (sopuy)</webMaster><lastBuildDate>Tue, 19 Sep 2023 15:40:05 &#43;0800</lastBuildDate><atom:link href="http://blog.sopuy.com/tags/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>sopuy@outlook.com (sopuy)</webMaster><lastBuildDate>Tue, 19 Sep 2023 15:40:05 &#43;0800</lastBuildDate><atom:link href="https://blog.sopuy.com/tags/" rel="self" type="application/rss+xml" /><item>
     <title>mfa</title>
-    <link>http://blog.sopuy.com/tags/mfa/</link>
+    <link>https://blog.sopuy.com/tags/mfa/</link>
     <pubDate>Tue, 19 Sep 2023 15:40:05 &#43;0800</pubDate>
     <author>sopuy</author>
-    <guid>http://blog.sopuy.com/tags/mfa/</guid>
+    <guid>https://blog.sopuy.com/tags/mfa/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
     <title>ansible</title>
-    <link>http://blog.sopuy.com/tags/ansible/</link>
+    <link>https://blog.sopuy.com/tags/ansible/</link>
     <pubDate>Thu, 13 Apr 2023 20:22:33 &#43;0800</pubDate>
     <author>sopuy</author>
-    <guid>http://blog.sopuy.com/tags/ansible/</guid>
+    <guid>https://blog.sopuy.com/tags/ansible/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
     <title>bash</title>
-    <link>http://blog.sopuy.com/tags/bash/</link>
+    <link>https://blog.sopuy.com/tags/bash/</link>
     <pubDate>Fri, 07 Apr 2023 13:41:05 &#43;0800</pubDate>
     <author>sopuy</author>
-    <guid>http://blog.sopuy.com/tags/bash/</guid>
+    <guid>https://blog.sopuy.com/tags/bash/</guid>
     <description><![CDATA[]]></description>
 </item>
 </channel>

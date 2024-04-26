@@ -1,31 +1,31 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>linux - Category - sopuy&#39;s weblog</title>
-        <link>http://blog.sopuy.com/categories/linux/</link>
+        <link>https://blog.sopuy.com/categories/linux/</link>
         <description>linux - Category - sopuy&#39;s weblog</description>
         <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>sopuy@outlook.com (sopuy)</managingEditor>
-            <webMaster>sopuy@outlook.com (sopuy)</webMaster><lastBuildDate>Tue, 19 Sep 2023 15:40:05 &#43;0800</lastBuildDate><atom:link href="http://blog.sopuy.com/categories/linux/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>sopuy@outlook.com (sopuy)</webMaster><lastBuildDate>Tue, 19 Sep 2023 15:40:05 &#43;0800</lastBuildDate><atom:link href="https://blog.sopuy.com/categories/linux/" rel="self" type="application/rss+xml" /><item>
     <title>linux ssh&#43;sudo enable 2fa</title>
-    <link>http://blog.sopuy.com/posts/linux-ssh-sudo-2fa/</link>
+    <link>https://blog.sopuy.com/posts/linux-ssh-sudo-2fa/</link>
     <pubDate>Tue, 19 Sep 2023 15:40:05 &#43;0800</pubDate>
     <author>Daning</author>
-    <guid>http://blog.sopuy.com/posts/linux-ssh-sudo-2fa/</guid>
+    <guid>https://blog.sopuy.com/posts/linux-ssh-sudo-2fa/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
     <title>Linux Facl</title>
-    <link>http://blog.sopuy.com/posts/linux-facl/</link>
+    <link>https://blog.sopuy.com/posts/linux-facl/</link>
     <pubDate>Mon, 10 Apr 2023 10:16:21 &#43;0800</pubDate>
     <author>Daning</author>
-    <guid>http://blog.sopuy.com/posts/linux-facl/</guid>
+    <guid>https://blog.sopuy.com/posts/linux-facl/</guid>
     <description><![CDATA[Linux facl 文件访问控制列表使用手册]]></description>
 </item>
 <item>
     <title>linux date basic</title>
-    <link>http://blog.sopuy.com/posts/linux-date-basic/</link>
+    <link>https://blog.sopuy.com/posts/linux-date-basic/</link>
     <pubDate>Fri, 07 Apr 2023 13:41:05 &#43;0800</pubDate>
     <author>Daning</author>
-    <guid>http://blog.sopuy.com/posts/linux-date-basic/</guid>
+    <guid>https://blog.sopuy.com/posts/linux-date-basic/</guid>
     <description><![CDATA[linux date 命令速查手册]]></description>
 </item>
 </channel>
