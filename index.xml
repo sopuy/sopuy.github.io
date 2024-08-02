@@ -1,8 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>sopuy&#39;s weblog</title>
+        <title>sopuy&#39;s blog</title>
         <link>https://blog.sopuy.com/</link>
-        <description>sopuy&#39;s weblog, devops, linux, python, go, prometheus, telegraf, zabbix, ansible</description>
+        <description>sopuy&#39;s blog, devops, linux, python, go, prometheus, telegraf, zabbix, ansible</description>
         <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>sopuy@outlook.com (sopuy)</managingEditor>
             <webMaster>sopuy@outlook.com (sopuy)</webMaster><lastBuildDate>Tue, 19 Sep 2023 15:40:05 &#43;0800</lastBuildDate>
             <atom:link href="https://blog.sopuy.com/index.xml" rel="self" type="application/rss+xml" />

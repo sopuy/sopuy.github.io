@@ -1,8 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>Categories - Category - sopuy&#39;s weblog</title>
+        <title>Categories - Category - sopuy&#39;s blog</title>
         <link>https://blog.sopuy.com/categories/</link>
-        <description>Categories - Category - sopuy&#39;s weblog</description>
+        <description>Categories - Category - sopuy&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>sopuy@outlook.com (sopuy)</managingEditor>
             <webMaster>sopuy@outlook.com (sopuy)</webMaster><lastBuildDate>Tue, 19 Sep 2023 15:40:05 &#43;0800</lastBuildDate><atom:link href="https://blog.sopuy.com/categories/" rel="self" type="application/rss+xml" /><item>
     <title>linux</title>

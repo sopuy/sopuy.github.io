@@ -1,8 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>ansible - Category - sopuy&#39;s weblog</title>
+        <title>ansible - Category - sopuy&#39;s blog</title>
         <link>https://blog.sopuy.com/categories/ansible/</link>
-        <description>ansible - Category - sopuy&#39;s weblog</description>
+        <description>ansible - Category - sopuy&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>sopuy@outlook.com (sopuy)</managingEditor>
             <webMaster>sopuy@outlook.com (sopuy)</webMaster><lastBuildDate>Thu, 13 Apr 2023 20:22:33 &#43;0800</lastBuildDate><atom:link href="https://blog.sopuy.com/categories/ansible/" rel="self" type="application/rss+xml" /><item>
     <title>ansible vars</title>

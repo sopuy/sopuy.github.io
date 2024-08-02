@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "style.min.css",
-	"sourceRoot": "/Users/daning/Documents/repositories/blog",
+	"sourceRoot": "/Users/daning/Documents/repositories/wiki/400-tech/website/blog.sopuy.com",
 	"sources": [
 		"themes/LoveIt/assets/css/style.scss",
 		"themes/LoveIt/assets/lib/normalize/normalize.css",
